@@ -11,7 +11,10 @@ public class projetoPI {
 	// "cannyBoots", "imortalsRosary" "horacleHourglass", "staffOfDestruction",
 	// "clairvoyantEye", "familyRing" };
 
+	
+	// Verificação do item recebido.
 	public static String verifyItem(String itemGained) {
+
 
 		Random generation = new Random();
 
@@ -86,7 +89,8 @@ public class projetoPI {
 
 	}
 
-	public static void verifyStatus(int health, int defense, int attack, int dodge) {
+	// Verificação dos status do personagem.
+public static void verifyStatus(int health, int defense, int attack, int dodge) {
 
 		System.out.println("Vida: " + health);
 		System.out.println("Defesa: " + defense);
@@ -744,3 +748,4 @@ public class projetoPI {
 	}
 
 }
+ 
