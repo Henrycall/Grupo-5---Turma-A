@@ -1,0 +1,647 @@
+public static void main(String[] args) throws InterruptedException {
+
+		Scanner input = new Scanner(System.in);
+
+		// itens:
+
+		String[] itemName = { "um pão élfico", "uma poção de vida", "uma tunica de mithril",
+				"um grimário do conhecimento", "a bota do sagaz", "o rosário do imortal", "o cajado da destruição",
+				"o anel de familia" };
+
+		String[] itemStatus = { "Recupera 5 pontos de vida", "Recupera 20 pontos de vida",
+				"Diminui em 10 o dano de inimigos", "iminui em 5 o dano de habilidades mal sucedidas",
+				"Aumenta a chance de se esquivar de um ataque",
+				"Permite que o jogador se levante com 30 de hp caso receba uma ferida mortal",
+				"Aumenta o dano em 50 de suas magias de ataque", "Uma herança de nossa familia, apesar de não dar "
+						+ "fazer nada, deixa viva a memória dentro dos nossos corações" };
+
+		int c = 0, num, timer = 10;
+
+		String itemGained = " ";
+
+		// jogo:
+
+		int option = 0, repeatLoop = 0;
+
+		// player status:
+
+		int maxHealth = 100, maxDefense = 5, maxAttack = 20, maxDodge = 15;
+
+		// poss�vel altera��o nos status:
+
+		int health = 0, defense = 0, attack = 0, dodge = 0, addHealth = 0;
+
+		do {
+
+			write("Selecione a opção desejada:\n", TimeUnit.MILLISECONDS, timer);
+			write("\n[1] Instruções", TimeUnit.MILLISECONDS, timer);
+			write("\n[2] Jogar", TimeUnit.MILLISECONDS, timer);
+			write("\n[3] Créditos", TimeUnit.MILLISECONDS, timer);
+			write("\n[4] Sair", TimeUnit.MILLISECONDS, timer);
+
+			System.out.println("");
+			option = input.nextInt();
+			System.out.println("");
+
+			switch (option) {
+
+			case 1:
+
+				write("\n O jogo é baseado em RPG de mesa, o mestre da mesa que chamamos de narrador \n"
+						+ "irá guiar a gameplay e de certa maneira controlar o mundo ao redor de Aelin, você deve \n"
+						+ "acertar as perguntas para ser bem sucedido nas magias que irão lançar ou pode tomar dano\n"
+						+ " de inimigos e dos seus próprios feitiços!\n", TimeUnit.MILLISECONDS, timer);
+
+				break;
+
+			case 2:
+
+				write("\nem um tempo antigo, cheio de violência e misticismo, os grandes magos de Winterhold ap�s dezenas de milhares de anos \n"
+						+ "descobriram uma forma não convencional de magia que ultrapassava o poder destrutivo conhecido até o momento. \n"
+						+ "Descobriram que os cálculos matemáticos escondiam os feitiços mais poderosos. Nossa história se passa 15 anos \n"
+						+ "após essa descoberta histórica quando nosso personagem \"Aelin\" filho \"Galandriel\" (Um dos magos que participou \n"
+						+ "da descoberta do novo tipo de magia e um dos responsáveis pela pesquisa realizadas com a mesma), ingressa no colégio \n"
+						+ "para estudar com o objetivo de se tornar o \"Guardião\" do Reino.\n", TimeUnit.MILLISECONDS,
+						timer);
+
+				System.out.println("");
+
+				write("\nNarrador: O dia está amanhecendo, uma pequena n�voa surge por entre as árvores cobrindo a �rea de floresta em volta da casa \n"
+						+ "de Galandriel, em seu quarto, Aelin ronca como nunca por conta do cansa�o causado pelos extensos treinos que vem tendo \n"
+						+ "para garantir que consiga uma vaga entre os grandes magos de Winterhold e possívelmente, ser guardião do reino. O Silencio \n"
+						+ "que era rompido apenas pelos altos roncos do nosso her�i, foi quebrado quando Galandriel chegava na entrada do quarto e em \n"
+						+ "alta voz bradou: \n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("Narrador: Ao abrir os olhos, Aelin se depara com Galandriel olhando ele da entrada de seu quarto, um lugar com uma luminosidade \n"
+						+ "relativa proveniente de velas, com pisos de madeira e paredes de pedra. Ele também vê uma enorme coleção de livros, dos quais \n"
+						+ "ele subtraiu muito tempo de sua vida folheando. O local está um pouco bagunçado com pratos, canecas sujas e folhas de pergaminhos \n"
+						+ "espalhadas sendo que algumas estão amassadas, provavelmente por ele não ter tempo hábil para deixar os estudos e fazer algum tipo \n"
+						+ "de limpeza ou organização.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("Aelin:  Ahhhhhh, não acredito que já amanheceu ! Parece que acabei de me deitar ! Vou levantar meu Pai, \n"
+						+ "agradeço pelo aviso !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("Galandriel: É o máximo que posso fazer por você, sabe bem que eu não posso interferir em mais nada em relação ao seu treino, ou você \n"
+						+ "pode acabar sendo punido com o cancelamento dos seus testes... \n", TimeUnit.MILLISECONDS,
+						timer);
+
+				System.out.println(" ");
+
+				write("Narrador: Enquanto Galandriel se retira, Aelin se levanta e segue para fazer suas necessidades matinais. Após termina-lôs, pega o seu \n"
+						+ "cajado (Item importante para conjurar magias, a madeira mágica canaliza a mana utilizada intensificando seus efeitos) e segue para \n"
+						+ "o local de treino para continuar sua preparação. Chegando no lugar ele organiza as magias que ele selecionou e come�a a proferir \n"
+						+ "palavas em élfico antigo: (Lembre-se que enquando o Aelin estiver conjurando, ser� necess�rio que as quest�es matem�ticas sejam \n"
+						+ "respondidas corretamente ou ele não vai obter sucesso na conjuração e possívelmente sofrerá penalidade).\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println("");
+
+				addHealth = question1(health);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("Narrador: A visão de Aelin fica escurecida e n�o consegue mais se mexer, aos poucos a vida se esvai"
+							+ "e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("Game Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("Narrador: Após o lancamento do feitiço, Aelin olha em sua lista o próximo e "
+						+ "inicia a conjuração: \n", TimeUnit.MILLISECONDS, timer);
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				addHealth = question2(health);
+
+				maxHealth = maxHealth - addHealth;
+
+				System.out.println(maxHealth + "\n");
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e não consegue mais se mexer, aos poucos a vida se esvai"
+							+ "e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: As horas foram passando e o momento da prova ia se aproximando, porém "
+						+ "enquanto Aelin estava praticando, ele observou que um barulho como de muitos passos se "
+						+ "aproximavam dele, ele vai em direção ao som para checar oque estava acontecendo, e ao se "
+						+ "aproximar, viu cerca de 15 guardas reais que iam em sua direção. Quando chegaram perto o "
+						+ "suficiente, o homem que parecia ser o líder se dirige a ele dizendo:\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\n Líder da Guarda Real: Aelin !!! Peço que você nos acompanhe imediatamente !!! "
+						+ "Nós não queremos machuca-lo, mas vamos utilizar os meios necessários para te apreender. "
+						+ "Venha sem resistir !", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Dragomir ? Oque significa isso tudo ? Me apreender ? Resisitir ? "
+						+ "Você não está fazendo sentido !\r\n" + "Oque está acontecendo ?\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\n Líder da Guarda Real: Bem... Provavelmente você deve saber oque houve, mas a "
+						+ "princesa foi raptada e encontramos uma tônica e um dos cajados que pertecem a você ! "
+						+ "Agora pare com esse teatro e nos acompanhe agora mesmo, de qualquer maneira vamos "
+						+ "conseguir tirar de você onde a princesa está, não importam os meios.\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Aelin estava completamente confuso e sem saber como agir, ele "
+						+ "pensava em como os pertences dele tinham aparecido dentro do quarto da princesa e "
+						+ "ao mesmo tempo pensava que se fosse pego, seria torturado porque não tinha provas "
+						+ "de sua inocência (A guarda real, era uma conhecida e temida instituição que tinha a"
+						+ " reputação de torturar pessoas mesmo sem saber se tinham envolvimento ou não com as "
+						+ "situações), diante dessa decisão, Aelin se lembra de um feitiço de fuga que ele "
+						+ "conhece e decide se evadir para conseguir provar sua inocência, rapidamente ele "
+						+ "começa a dizer as palavras mágicas:\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				addHealth = question3(health);
+
+				maxHealth = maxHealth - addHealth;
+
+				System.out.println(maxHealth + "\n");
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e não consegue mais se mexer, aos poucos a vida se esvai"
+							+ "e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Após alguns meses de fuga e esconderijos, Aelin finalmente chega na \n "
+						+ "cidade, ele procura entrar sem chamar atenção para si, aonde onde ele olha, consegue ver \n "
+						+ "cartazes que falam sobre a princesa desaparecida e sobre recompensas para quem ajudar no \n "
+						+ "resgate ou encontrando o culpado, de qualquer maneira ele vai se esgueirando para dentro \n "
+						+ "da cidade e chega em frente a uma pequena casa, claramente não é utilizada por nobres e \n "
+						+ "está relativamente abandonada, ele bate três vezes na porta e após alguns segundos ela \n "
+						+ "se abre, quem aparece é um elfo alto de cabelos loiros e com uma certa idade e após \n "
+						+ "identificar Aelin ele diz:", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nMaedhros: Entre, entre rapidamente...", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Após eles entrarem e fecharem a porta Aelin diz:", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Tio.... Como é bom ver algum rosto familiar ! Estou a meses assim, me \n"
+						+ "escondendo e procurando pistas sobre o desaparecimento da princesa, por enquanto ouvi \n "
+						+ "rumores que ela foi levada para o norte do país, gostaria muito de encontra-lô logo e \n "
+						+ "limpar o meu nome.... Sei que você está aposentado, mas não poderia me ajudar \n ? ",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Aelin sabia que seu tio fazia parte de um grupo anti-governo na região e \n "
+						+ " que tinham uma certa influência e facilidade para encontrar informações \n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nMaedhros: Aelin... Que bom te ver ! Eu nunca acreditei que isso havia sido obra \n"
+						+ "sua ! Um jovem mago brilhante como você e com ambição de se tornar o Guardião nunca iría \n"
+						+ " jogar tudo pro ar para raptar princesa nenhuma... Fique aqui dentro, tem comida e água \n "
+						+ "para você, se abasteça, coma e descanse, vou ver oque consigo fazer para ajuda-lo, \n "
+						+ "gostaria de poder aproveitar a sua presença se não estivessemos com tão pouco tempo... \n "
+						+ "mas enfim.... fique aqui e tente não chamar atenção !", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Enquanto Aelin tirava seu tempo de descanso dessa longa viagem, \n "
+						+ "Maedhros foi até a cidade e conversou com quem podia para conseguir informações e tamb�m \n "
+						+ "foi até seu amigo mercador para comprar um item para ajudar Aelin em sua jornada ! \n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de Sorteio do item
+				itemGained = verifyItem(itemGained);
+
+				// Fun��es de verifica��o dos status dos itens simples
+				health = health + verifyItemStatus(itemGained);
+				health = health + verifyItem2Status(itemGained);
+				defense = defense + verifyItem3Status(itemGained);
+				defense = defense + verifyItem4Status(itemGained);
+				dodge = dodge + verifyItem5Status(itemGained);
+				attack = attack + verifyItem6Status(itemGained);
+
+				// C�lculos dos status dos itens simples
+				maxHealth = maxHealth + health;
+				maxDefense = maxDefense + defense;
+				maxAttack = maxAttack + attack;
+				maxDodge = maxDodge + dodge;
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				write("\nNarrador: Aelin está deitado e escuta a porta se abrindo e seu Tio entrando, Maedhros \n "
+						+ "chama Aelin e diz:", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Verifica��o do n�mero do item, utilizado para ajustar o di�logo
+				// abaixo para o
+				// item sorteado.
+				num = verifyItemNum(itemGained);
+
+				write("\nMaedhros: Aelin, Aelin ! Consegui informações úteis para você e tamb�m te trouxe \n"
+						+ itemName[num] + " , espero que você faça um bom uso dele, este item \n" + itemStatus[num]
+						+ ". Sobre as informções, "
+						+ " descobri que os rumores realmente estavam corretos, você deve seguir para o norte até Kiev,\n "
+						+ "após o desaparecimento da princesa, habitantes locais avistaram uma pessoa vestida com trajes reais,\n "
+						+ "cercada por homens suspeitos, aparetemente mantida a força com eles. Você deve partir logo, não \n"
+						+ "sabemos qual será a intenção dos sequestradores com essa ousada atitude.",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Tio..... Não sei como te agradeçer, não imaginei que estaria aqui neste momento....\n"
+						+ "Eu estava me preparando para o teste... só queria poder cuidar do Reino e deixar minha família orgulhosa de mim.... \n"
+						+ "Devo ir Tio, mas espero tudo de melhor a você, espero poder retribuir sua gentileza... Adeus....\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nMaedhros: Aelin... Apenas mee prometa que vai salvar a princesa e limpar o nome de nossa família.... Adeus....\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Aelin segue em direção a Kiev, a noite cai na floresta e Aelin para com a intenção de descansar\n"
+						+ "mas é surpreendido por um Ghoul que estava perambulando na região.\n", TimeUnit.MILLISECONDS,
+						timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				addHealth = question4(health, maxDodge, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// maxHealth = 0;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Após perceber que eliminou o a ameaça, Aelin descansa o resto da noite e parte \n"
+						+ "para Kiev de manhã.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Aelin finalmente chega em seu destino, após semanas de viagem e passando por diversos desafios\n "
+						+ "no caminho ele concluir sua viagem e começa a investigar a informação que seu Tio passou, sobre a menina que\n "
+						+ "parecia estar sendo mantida a força como refém. Os habitantes dizem que a tal mulher estava na Catetral de Santa \n"
+						+ "Sofia, uma igreja famosa da cidade e Aelin segue até o local.\n", TimeUnit.MILLISECONDS,
+						timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Ele chega no local, é um prédio enorme de paredes brancas e telhas verdes, no alto das torres\n "
+						+ "É possível ver cúpulas douradas com cruzes em cima, ele percebe movimentação de pessoas que parecem guardar o\n "
+						+ "local e entra no local sem chamar atenção.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Ele vai se esgueirando pelos cômodos da catedral e após andar consideravelmente, encontra uma \n "
+						+ "porta sendo guardada por trás guardas. Aelin decide conjurar um feitiço para deixar os guardas em uma ilusão,\n "
+						+ "ele come�a a proferir o feiti�o:\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println("");
+
+				addHealth = question5(health, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Entrando no quarto, Aelin vê Lyuba deitada e amarrada na cama com cordas e rapidamente vai em sua direção para solta-lô,\n "
+						+ "com sua magia de fogo de maneira reduzida ele pretende queimar as amarras, ele começa a conjurar:\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println("");
+
+				addHealth = question6(health, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Aelin corre para Lyuba e e fala com ela:", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Magestade ! Você está bem ? Consegue me dizer oque houve ? Estão me acusando de ter raptado você e\n "
+						+ "tive que fugir para não ser torturado pelo seu sequestro !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nLyuba: Aelin, já estava perdendo as esperanças de voltar com vida... Que pena que estamos nos reencontrando dessa \n"
+						+ "maneira, ainda mais sabendo que as pessoas do castelo estão procurando voc� por algo que não fez.... Vou ajustar\n "
+						+ "isso assim que voltar, te dou a minha palavra !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Princesa, você conseguiu identificar quem foi o autor desse absurdo ?\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nLyuba: Infelizmente sim... A pessoa estava bem em baixo dos nossos narizes.... A mente por traz desse crime \n "
+						+ "�....", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Enquanto Lyuba falava, uma alta voz bradou da entrada do quarto dizendo: \n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nTakeo: Eu mesmo... Jovem Aelin... Fiz um sorteio para ver qual dos jovens haveriam de carregar a culpa por mim, mal pude me \n"
+						+ "conter quando vi que era o filho do arrogante Galandriel, realmente me enchi de alegria ! Mas infelizmente vou ter que \n"
+						+ "acabar com você eu mesmo e... Salvar a Princesa !!! Vou usar um feitiço para alterar a mem�ria dela e reescrever a história \n"
+						+ "em que por meus atos heróicos, vou ganhar a mão da princesa após salvá-la de um delinquente como você !",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Takeo ! Como você pôde ? Traiu Winterhold e o Reino e seus colegas Magos, voc� � uma vergonha.... Chega de fugir, é meu dever \n "
+						+ "cessar esse absurdo e salvar a Princesa !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("Narrador: Como dito anteriormente, Aelin é rápido e preciso. Não passa nem 3 segundos e já está conjurando uma bola de fogo em direção de \n"
+						+ "Takeo enquanto se posiciona estratégicamente:\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println(" ");
+
+				addHealth = question7(health, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Após a troca de ataques, Aelin inicia um feitiço el�trico que envolve seu corpo com eletricidade e vai crescendo enquanto \n"
+						+ "ele profere as palavras:\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println(" ");
+
+				addHealth = question8(health, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: A batalha continua e Aelin não ve outra opção se não conjurar o seu feitiço mais poderoso, a “Última Luz”, ele sabe que se \n "
+						+ "falhar e não controlar corretamente, pode acabar morrendo por conta da enorme força e energia que o feitiço pode emitir, além de \n "
+						+ "que pode acabar matando a todos ao seu redor.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador:  Por estar se esgotando e não ter opções, ele inicia o feitiço e enquanto ele vai seguindo uma luz muito forte se forma em  \n"
+						+ "suas mãos, é possível ver que aquela luz é como se fosse feita de algo físico, era algo assutador e realmente poderoso, ele segue \n "
+						+ "proferindo as palavras:\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				// Fun��o de impress�o dos status do personagem.
+				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
+
+				System.out.println(" ");
+
+				addHealth = question9(health, itemGained);
+
+				maxHealth = maxHealth - addHealth;
+
+				// Item que traz personagem de volta a vida caso maxHealth chegue a 0.
+				health = imortalsRosary(itemGained, maxHealth);
+				itemGained = imortalsRosary2(itemGained, maxHealth);
+				maxHealth = maxHealth + health;
+
+				// Condi��o de morte do personagem.
+				if (maxHealth == 0) {
+
+					write("\nNarrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se\n"
+							+ " esvai e nada mais importa....\n", TimeUnit.MILLISECONDS, timer);
+					write("\nGame Over !\n", TimeUnit.MILLISECONDS, timer);
+
+					break;
+
+				}
+
+				write("\nNarrador: Após a luta, Aelin pega a princesa e segue viagem para o Reino. Quando chega, é recebido de maneira Brutal pelos \n "
+						+ "guardas da entrada que o abordam e o prendem mas são interrompidos pela princesa que diz:\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("Lyuba: Parem Imediatamente ! É assim que vocês vão tratar a pessoa que me salvou ? Vou pedir pela cabeça \n" +
+"\n "
+						+ "de vocês !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nGuarda: Me perdoe Magestade ! Pertences deste elfo foram encontrados em seus aposentos, ele era o principal\n "
+						+ "suspeito !\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nLyuba: Foi o mago Takeo quem me raptou, esse jovem foi quem me libertou e derrotou ele. Eu preciso de cuidados, me levem para o \n"
+						+ "castelo, enquanto ao jovem, avisem a todos do ocorrido.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\n Narrador:Alguns dias depois Aelin foi chamado pela realeza para participar do banquete de comemoração ao retorno da princesa. \n "
+						+ "Ao chegar no local o Rei ao notar a sua presença bradou: \n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nRei Amis IV: Aelin !!! Somos gratos a você pelo seu serviço, já solicitei aos magos que garantam sua vaga no colégio de Winterhold ! /n "
+						+ "Também estou indicando você para ser um dos candidatos de “Guardião do Reino”, erramos em duvidar de você e gostariamos de compensa-lo./n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nAelin: Magestade.... Muito obrigado pela sua generosidade. Sempre foi meu dever defender o Reino, \n "
+						+ ", não poderia ter feito diferente.\n", TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nLyuba: Também sou grata a você por sua lealdade ! Desfizemos o erro e não mas irão ver a sua familia com desprezo e sim honra !\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				System.out.println("");
+
+				write("\nNarrador: Assim foi o incidente com a Princesa que virou conto dentre os habitantes de Odessa, da coragem e determinação de um simples  \n"
+						+ "simples jovem mago que queria seguir os passos do pai e se tornar o “Guardião” do Reino.\n",
+						TimeUnit.MILLISECONDS, timer);
+
+				repeatLoop = 1;
+
+				break; // Menu
+
+			case 3:
+
+				write("\nTurma A - Noite - Grupo 5\n", TimeUnit.MILLISECONDS, timer);
+				write("\nDesenvolvedores: \n", TimeUnit.MILLISECONDS, timer);
+				write("\nFilipe Santana Cordeiro", TimeUnit.MILLISECONDS, timer);
+				write("\nHenry Felipe Callera", TimeUnit.MILLISECONDS, timer);
+				write("\nLuciano Freire Lopes", TimeUnit.MILLISECONDS, timer);
+				write("\nRubens Anjos dos Santos Silva", TimeUnit.MILLISECONDS, timer);
+				write("\nVinícius Monteiro Lopes\n", TimeUnit.MILLISECONDS, timer);
+
+				break;
+
+			case 4:
+
+				write("\nObrigado por jogar !\n", TimeUnit.MILLISECONDS, timer);
+				System.exit(0);
+
+				break;
+
+			default:
+
+				write("\nValor invalido !\n", TimeUnit.MILLISECONDS, timer);
+
+				break;
+
+			}
+
+		} while (repeatLoop == 0);
+
+		input.close();
+		// teste
+
+	}
+
+}
