@@ -1,4 +1,3 @@
-# Rpg
 Trabalho de RPG - da faculdade 
 
-- Audio
+- Segue o trello (https://trello.com/b/oTeXxYcZ/grupo-5-turma-a-noite)
