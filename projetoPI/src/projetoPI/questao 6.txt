@@ -1,0 +1,383 @@
+public static int question6(int health, String itemGained) throws InterruptedException {
+
+		ArrayList<Integer> urn = new ArrayList<Integer>();
+		Scanner input = new Scanner(System.in);
+		Random generation = new Random();
+		int a, clock = 2;
+		boolean correct = true;
+
+		a = generation.nextInt(2);
+
+		if (a == 0) {
+
+			System.out.println("- Aelin: Em uma luta na floresta perdida, percebemeos que temos arvores amaldicoadas com frutos que te atacam, precisamos saber quantos frutos tem! na floresta tem 12 arvores, cada arvore possui 12 galhos e cada galho possui 12 frutos, quantos frutos temos na floresta perdida ?");
+
+			String Quest1[] = { "144", "1224", "1564", "1728", "Nenhuma da alternativas" };
+			int Count[] = { 0, 1, 2, 3, 4 };
+			String correct1 = "1728", answer1 = "";
+
+			urn.add(Count[0]);
+			urn.add(Count[1]);
+			urn.add(Count[2]);
+			urn.add(Count[3]);
+			urn.add(Count[4]);
+
+			Collections.shuffle(urn);
+
+			System.out.println("a) " + Quest1[urn.get(Count[0])]);
+			System.out.println("b) " + Quest1[urn.get(Count[1])]);
+			System.out.println("c) " + Quest1[urn.get(Count[2])]);
+			System.out.println("d) " + Quest1[urn.get(Count[3])]);
+			System.out.println("e) " + Quest1[urn.get(Count[4])]);
+
+			answer1 = input.next();
+
+			switch (answer1) {
+
+			case "a":
+			case "A":
+
+				if (correct1.equals(Quest1[urn.get(Count[0])])) {
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente, porém acaba queimado por não conseguir controlar o fogo como deveria e toma "+heath+ " dano.\n");
+
+				}
+
+				break;
+
+			case "b":
+			case "B":
+
+				if (correct1.equals(Quest1[urn.get(Count[1])])) {
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente, porém acaba queimado por não conseguir controlar o fogo como deveria e toma "+heath+ " dano.\n");
+
+				}
+				break;
+
+			case "c":
+			case "C":
+
+				if (correct1.equals(Quest1[urn.get(Count[2])])) {
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente, porém acaba queimado por não conseguir controlar o fogo como deveria e toma "+heath+ " dano.\n");
+
+				}
+
+				break;
+
+			case "d":
+			case "D":
+
+				if (correct1.equals(Quest1[urn.get(Count[3])])) {
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente, porém acaba queimado por não conseguir controlar o fogo como deveria e toma "+heath+ " dano.\n");
+
+				}
+				break;
+
+			case "e":
+			case "E":
+
+				if (correct1.equals(Quest1[urn.get(Count[4])])) {
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Aelin cobre suas mãos de fogo e toca nas cordas que se desfazem facilmente, porém acaba queimado por não conseguir controlar o fogo como deveria e toma "+heath+ " dano.\n");
+
+				}
+				break;
+
+			}
+
+		} else if (a == 1) {
+
+			System.out.println("- Aelin: Um adulto humano saudável abriga cerca de 100 bilhões de bactérias, somente em seu trato digestivo. Esse número de bactérias pode ser escrito como :\n");
+
+			String Quest2[] = { "10^9", "10^10", "10^11", "10^12",
+					"Nenhuma das alternativas" };
+			int Count[] = { 0, 1, 2, 3, 4 };
+			String correct2 = "10^11", answer2 = "";
+
+			// Estrutura de mistura de alternativas.
+
+			urn.add(Count[0]);
+			urn.add(Count[1]);
+			urn.add(Count[2]);
+			urn.add(Count[3]);
+			urn.add(Count[4]);
+
+			Collections.shuffle(urn);
+
+			System.out.println("a) " + Quest2[urn.get(Count[0])]);
+			System.out.println("b) " + Quest2[urn.get(Count[1])]);
+			System.out.println("c) " + Quest2[urn.get(Count[2])]);
+			System.out.println("d) " + Quest2[urn.get(Count[3])]);
+			System.out.println("e) " + Quest2[urn.get(Count[4])]);
+
+			answer2 = input.next();
+
+			switch (answer2) {
+
+			case "a":
+			case "A":
+
+				if (correct2.equals(Quest2[urn.get(Count[0])])) {
+
+					write(
+							"Aelin termina a conjuração e lança a bola de fogo que acerta em cheio Takeo que não teve tempo de reação, dando “x” de dano..\n");
+
+				} else {
+					health = 5;
+
+					write(
+							" Apesar da velocidade de Aelin, Takeo é mais velho e mais experiente mago, e consegue se esquivar do ata-que. Imediatamente cria uma lança de gelo e manda em direção a Aelin que toma " +heath+" de dano.");
+
+				}
+
+				break;
+
+			case "b":
+			case "B":
+
+				if (correct2.equals(Quest2[urn.get(Count[1])])) {
+
+					write(
+							"Aelin termina a conjuração e lança a bola de fogo que acerta em cheio Takeo que não teve tempo de reação, dando “x” de dano..\n");
+
+				} else {
+					health = 5;
+
+					write(
+							" Apesar da velocidade de Aelin, Takeo é mais velho e mais experiente mago, e consegue se esquivar do ata-que. Imediatamente cria uma lança de gelo e manda em direção a Aelin que toma " +heath+" de dano.");
+
+				}
+
+
+				break;
+
+			case "c":
+			case "C":
+
+				if (correct2.equals(Quest2[urn.get(Count[2])])) {
+
+
+					write(
+							"Aelin termina a conjuração e lança a bola de fogo que acerta em cheio Takeo que não teve tempo de reação, dando “x” de dano..\n");
+
+				} else {
+					health = 5;
+
+					write(
+							" Apesar da velocidade de Aelin, Takeo é mais velho e mais experiente mago, e consegue se esquivar do ata-que. Imediatamente cria uma lança de gelo e manda em direção a Aelin que toma " +heath+" de dano.");
+
+				}
+
+				break;
+
+			case "d":
+			case "D":
+
+				if (correct2.equals(Quest2[urn.get(Count[3])])) {
+
+
+					write(
+							"Aelin termina a conjuração e lança a bola de fogo que acerta em cheio Takeo que não teve tempo de reação, dando “x” de dano..\n");
+
+				} else {
+					health = 5;
+
+					write(
+							" Apesar da velocidade de Aelin, Takeo é mais velho e mais experiente mago, e consegue se esquivar do ata-que. Imediatamente cria uma lança de gelo e manda em direção a Aelin que toma " +heath+" de dano.");
+
+				}
+				break;
+
+			case "e":
+			case "E":
+
+
+				write(
+						"Aelin termina a conjuração e lança a bola de fogo que acerta em cheio Takeo que não teve tempo de reação, dando “x” de dano..\n");
+
+			} else {
+				health = 5;
+
+				write(
+						" Apesar da velocidade de Aelin, Takeo é mais velho e mais experiente mago, e consegue se esquivar do ata-que. Imediatamente cria uma lança de gelo e manda em direção a Aelin que toma " +heath+" de dano.");
+
+			}
+
+				break;
+
+			}
+
+		} else if (a == 2) {
+
+			System.out.println("\r\n"
+					+ "- Aelin: Carlos e Pedro são alunos muito aplicados em matemática. Certo dia, Carlos perguntou a Pedro se ele sabia resolver a seguinte questão: Determine o algarismo das unidades do número (8325474)^(642). Pedro resolveu o problema, chegando ao resultado correto. Qual foi o resultado a que Pedro chegou?\r\n"
+					+ ")
+
+			String Quest3[] = { "4", "2", "5", "6",
+					"Nenhuma das alternativas" };
+			int Count[] = { 0, 1, 2, 3, 4 };
+			String correct3 = "6", answer3 = "";
+
+			// Estrutura de mistura de alternativas.
+
+			urn.add(Count[0]);
+			urn.add(Count[1]);
+			urn.add(Count[2]);
+			urn.add(Count[3]);
+			urn.add(Count[4]);
+
+			Collections.shuffle(urn);
+
+			System.out.println("a) " + Quest3[urn.get(Count[0])]);
+			System.out.println("b) " + Quest3[urn.get(Count[1])]);
+			System.out.println("c) " + Quest3[urn.get(Count[2])]);
+			System.out.println("d) " + Quest3[urn.get(Count[3])]);
+			System.out.println("e) " + Quest3[urn.get(Count[4])]);
+
+			answer3 = input.next();
+
+			switch (answer3) {
+
+			case "a":
+			case "A":
+
+				if (correct3.equals(Quest3[urn.get(Count[0])])) {
+
+					write("Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, a eletricidade não da chance de reação a ele e o atinge em grande velocidade dando “x” de dano.\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, oque ele não sabia é que Takeo também tinha conjurado uma magia, neste caso utilizou uma magia que tem a ca-pacidade de refletir a magia recebida e envia-la devolta, na mesma impressionante velocidade volta e atinge Aelin em cheio tomando " +heath+" dano.\n");
+
+				}
+
+				break;
+
+			case "b":
+			case "B":
+
+				if (correct3.equals(Quest3[urn.get(Count[1])])) {
+
+					write("Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, a eletricidade não da chance de reação a ele e o atinge em grande velocidade dando “x” de dano.\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, oque ele não sabia é que Takeo também tinha conjurado uma magia, neste caso utilizou uma magia que tem a ca-pacidade de refletir a magia recebida e envia-la devolta, na mesma impressionante velocidade volta e atinge Aelin em cheio tomando " +heath+" dano.\n");
+
+				}
+
+				break;
+
+			case "c":
+			case "C":
+
+				if (correct3.equals(Quest3[urn.get(Count[2])])) {
+					write("Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, a eletricidade não da chance de reação a ele e o atinge em grande velocidade dando “x” de dano.\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, oque ele não sabia é que Takeo também tinha conjurado uma magia, neste caso utilizou uma magia que tem a ca-pacidade de refletir a magia recebida e envia-la devolta, na mesma impressionante velocidade volta e atinge Aelin em cheio tomando " +heath+" dano.\n");
+
+				}
+
+
+
+				break;
+
+			case "d":
+			case "D":
+
+				if (correct3.equals(Quest3[urn.get(Count[3])])) {
+
+					write("Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, a eletricidade não da chance de reação a ele e o atinge em grande velocidade dando “x” de dano.\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, oque ele não sabia é que Takeo também tinha conjurado uma magia, neste caso utilizou uma magia que tem a ca-pacidade de refletir a magia recebida e envia-la devolta, na mesma impressionante velocidade volta e atinge Aelin em cheio tomando " +heath+" dano.\n");
+
+				}
+
+
+
+				break;
+
+			case "e":
+			case "E":
+
+				if (correct3.equals(Quest3[urn.get(Count[4])])) {
+
+					write
+					("Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, a eletricidade não da chance de reação a ele e o atinge em grande velocidade dando “x” de dano.\n");
+
+				} else {
+
+					health = 5;
+
+					write(
+							"Uma imensa quantidade de energia se acumula nas mãos de Aelin que lança tudo em direção de Takeo, oque ele não sabia é que Takeo também tinha conjurado uma magia, neste caso utilizou uma magia que tem a ca-pacidade de refletir a magia recebida e envia-la devolta, na mesma impressionante velocidade volta e atinge Aelin em cheio tomando " +heath+" dano");
+
+				}
+
+
+				break;
+
+			}
+
+		}
+
+		return health;
+	}
