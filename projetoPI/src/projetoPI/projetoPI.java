@@ -1670,783 +1670,1509 @@ public class projetoPI {
 
 	}
 
-	public static int question4(int health, String itemGained) {
+	public static int question4(int health, int maxDodge, String itemGained) {
 
 		ArrayList<Integer> urn = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
 		Random generation = new Random();
-		int a, clock = 2;
+		int a, hit, clock = 2;
 		boolean correct = true;
 
 		a = generation.nextInt(2);
 
-		do {
+		// Rolagem de acerto.
+		hit = generation.nextInt(25);
 
-			if (a == 0) {
+		// Estrutura de decisão para validar o possível ataque.
+		if (maxDodge >= hit) {
 
-				System.out.println(
-						"Aelin: Dado um n�mero hexadecimal (1E9), qual seria o valor do mesmo n�mero para base 2 ?");
+			System.out.println(
+					"Narrador: Aelin é um elfo, eles são conhecidos por sua agilidade e precisão, o Ghoul não tem "
+							+ "chances contra uma movimentação tão precisa, e Aelin tomando distância inicia a conjuração de um feitiço"
+							+ " de ataque para acabar com a batalha.\n");
 
-				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
-				int Count[] = { 0, 1, 2, 3, 4 };
-				String correct1 = "1 1110 1001", answer1 = "";
+			do {
 
-				if (itemGained.equals("clairvoyantEye")) {
+				if (a == 0) {
 
-					// Estrutura de mistura de alternativas com item ativo.
+					System.out.println("Aelin: Qual expressão exponencial é equivalente a rais 7º de B");
 
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
+					String Quest1[] = { "b^1/7", "b^7", "1/b^7", "7^b/", "Nenhuma da alternativas" };
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct1 = "b^1/7", answer1 = "";
 
-					Collections.shuffle(urn);
+					if (itemGained.equals("clairvoyantEye")) {
 
-					System.out.println("a) " + Quest1[urn.get(Count[0])]);
-					System.out.println("b) " + Quest1[urn.get(Count[1])]);
-					System.out.println("c) " + Quest1[urn.get(Count[2])]);
+						// Estrutura de mistura de alternativas com item ativo.
 
-				} else {
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
 
-					// Estrutura de mistura de alternativas.
+						Collections.shuffle(urn);
 
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
-					urn.add(Count[3]);
-					urn.add(Count[4]);
+						System.out.println("a) " + Quest1[urn.get(Count[0])]);
+						System.out.println("b) " + Quest1[urn.get(Count[1])]);
+						System.out.println("c) " + Quest1[urn.get(Count[2])]);
 
-					Collections.shuffle(urn);
+					} else {
 
-					System.out.println("a) " + Quest1[urn.get(Count[0])]);
-					System.out.println("b) " + Quest1[urn.get(Count[1])]);
-					System.out.println("c) " + Quest1[urn.get(Count[2])]);
-					System.out.println("d) " + Quest1[urn.get(Count[3])]);
-					System.out.println("e) " + Quest1[urn.get(Count[4])]);
+						// Estrutura de mistura de alternativas.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest1[urn.get(Count[0])]);
+						System.out.println("b) " + Quest1[urn.get(Count[1])]);
+						System.out.println("c) " + Quest1[urn.get(Count[2])]);
+						System.out.println("d) " + Quest1[urn.get(Count[3])]);
+						System.out.println("e) " + Quest1[urn.get(Count[4])]);
+
+					}
+
+					answer1 = input.next();
+
+					switch (answer1) {
+
+					case "a":
+					case "A":
+
+						if (correct1.equals(Quest1[urn.get(Count[0])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct1.equals(Quest1[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct1.equals(Quest1[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct1.equals(Quest1[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct1.equals(Quest1[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					}
+
+				} else if (a == 1) {
+
+					System.out.println("Aelin: Qual o resultado da seguinte multiplicação (1+x).(x² - 5x -6)\n");
+
+					String Quest2[] = { "x³-4x²-11x-6", "x²-5x-6+x³-5x²-6x", "x³+4x²-6", "x²+4x-11"};
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct2 = "x³-4x²-11x-6", answer2 = "";
+
+					if (itemGained.equals("clairvoyantEye")) {
+
+						// Estrutura de mistura de alternativas com o item ativo.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest2[urn.get(Count[0])]);
+						System.out.println("b) " + Quest2[urn.get(Count[1])]);
+						System.out.println("c) " + Quest2[urn.get(Count[2])]);
+
+					} else {
+
+						// Estrutura de mistura de alternativas.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest2[urn.get(Count[0])]);
+						System.out.println("b) " + Quest2[urn.get(Count[1])]);
+						System.out.println("c) " + Quest2[urn.get(Count[2])]);
+						System.out.println("d) " + Quest2[urn.get(Count[3])]);
+						System.out.println("e) " + Quest2[urn.get(Count[4])]);
+
+					}
+
+					answer2 = input.next();
+
+					switch (answer2) {
+
+					case "a":
+					case "A":
+
+						if (correct2.equals(Quest2[urn.get(Count[0])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct2.equals(Quest2[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health = 5;
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct2.equals(Quest2[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct2.equals(Quest2[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct2.equals(Quest2[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					}
+
+				} else if (a == 2) {
+
+					System.out.println("Aelin: Qual o resultado da divisão de:  2x³+4x²-6x+4 por x-3\n");
+
+					String Quest3[] = { "2x²+10x+24", "x²+10x+24", "5x²+10x-24", "5x²+10x-24²", "Nenhuma das alternativas" };
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct3 = "2x²+10x+24", answer3 = "";
+
+					if (itemGained.equals("clairvoyantEye")) {
+
+						// Estrutura de mistura de alternativas com item ativo.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest3[urn.get(Count[0])]);
+						System.out.println("b) " + Quest3[urn.get(Count[1])]);
+						System.out.println("c) " + Quest3[urn.get(Count[2])]);
+
+					} else {
+
+						// Estrutura de mistura de alternativas.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest3[urn.get(Count[0])]);
+						System.out.println("b) " + Quest3[urn.get(Count[1])]);
+						System.out.println("c) " + Quest3[urn.get(Count[2])]);
+						System.out.println("d) " + Quest3[urn.get(Count[3])]);
+						System.out.println("e) " + Quest3[urn.get(Count[4])]);
+
+					}
+
+					answer3 = input.next();
+
+					switch (answer3) {
+
+					case "a":
+					case "A":
+
+						if (correct3.equals(Quest3[urn.get(Count[0])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct3.equals(Quest3[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct3.equals(Quest3[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct3.equals(Quest3[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct3.equals(Quest3[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							health = 5;
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ health + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+						}
+
+						break;
+
+					}
 
 				}
 
-				answer1 = input.next();
+			} while (correct == true && !(clock == 2));
 
-				switch (answer1) {
+			// Personagem foi atingindo pelo inimigo.
 
-				case "a":
-				case "A":
+		} else {
 
-					if (correct1.equals(Quest1[urn.get(Count[0])])) {
+			health = 5;
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+			System.out.println(
+					"Narrador: A criatura foi mais rápida e dispara em direção de Aelin com suas mãos pútridas, o inimigo foi rápido demais, "
+							+ "o Ghoul se aproxima dele e finca os dentes no ombro de Aelin que toma " + health
+							+ " de dano do seu oponente.\n");
 
-						// Item de segunda tentativa.
+			do {
 
-						if (itemGained.equals("horacleHourglass")) {
+				if (a == 0) {
 
-							correct = false;
+					System.out.println("Aelin: Qual expressão exponencial é equivalente a rais 7º de B ?\n");
 
-						}
+					String Quest1[] = { "b^1/7", "b^7", "1/b^7", "7^b/", "Nenhuma da alternativas" };
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct1 = "b^1/7", answer1 = "";
 
-					} else {
+					if (itemGained.equals("clairvoyantEye")) {
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
+						// Estrutura de mistura de alternativas com item ativo.
 
-						// Item de segunda tentativa.
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
 
-						if (itemGained.equals("horacleHourglass")) {
+						Collections.shuffle(urn);
 
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "b":
-				case "B":
-
-					if (correct1.equals(Quest1[urn.get(Count[1])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
+						System.out.println("a) " + Quest1[urn.get(Count[0])]);
+						System.out.println("b) " + Quest1[urn.get(Count[1])]);
+						System.out.println("c) " + Quest1[urn.get(Count[2])]);
 
 					} else {
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
+						// Estrutura de mistura de alternativas.
 
-						// Item de segunda tentativa.
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
 
-						if (itemGained.equals("horacleHourglass")) {
+						Collections.shuffle(urn);
 
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
+						System.out.println("a) " + Quest1[urn.get(Count[0])]);
+						System.out.println("b) " + Quest1[urn.get(Count[1])]);
+						System.out.println("c) " + Quest1[urn.get(Count[2])]);
+						System.out.println("d) " + Quest1[urn.get(Count[3])]);
+						System.out.println("e) " + Quest1[urn.get(Count[4])]);
 
 					}
 
-					break;
+					answer1 = input.next();
 
-				case "c":
-				case "C":
+					switch (answer1) {
 
-					if (correct1.equals(Quest1[urn.get(Count[2])])) {
+					case "a":
+					case "A":
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
-						// Item de segunda tentativa.
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
 
-						if (itemGained.equals("horacleHourglass")) {
+							// Item de segunda tentativa.
 
-							correct = false;
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
 
 						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct1.equals(Quest1[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct1.equals(Quest1[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct1.equals(Quest1[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct1.equals(Quest1[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					}
+
+				} else if (a == 1) {
+
+					System.out.println("Aelin: Qual o resultado da seguinte multiplicação (1+x).(x² - 5x -6)\n");
+
+					String Quest2[] = { "x³-4x²-11x-6", "x²-5x-6+x³-5x²-6x", "x³+4x²-6", "x²+4x-11", "Nenhuma das alternativas" };
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct2 = "x³-4x²-11x-6", answer2 = "";
+
+					if (itemGained.equals("clairvoyantEye")) {
+
+						// Estrutura de mistura de alternativas com o item ativo.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest2[urn.get(Count[0])]);
+						System.out.println("b) " + Quest2[urn.get(Count[1])]);
+						System.out.println("c) " + Quest2[urn.get(Count[2])]);
 
 					} else {
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
+						// Estrutura de mistura de alternativas.
 
-						// Item de segunda tentativa.
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
 
-						if (itemGained.equals("horacleHourglass")) {
+						Collections.shuffle(urn);
 
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
+						System.out.println("a) " + Quest2[urn.get(Count[0])]);
+						System.out.println("b) " + Quest2[urn.get(Count[1])]);
+						System.out.println("c) " + Quest2[urn.get(Count[2])]);
+						System.out.println("d) " + Quest2[urn.get(Count[3])]);
+						System.out.println("e) " + Quest2[urn.get(Count[4])]);
 
 					}
 
-					break;
+					answer2 = input.next();
 
-				case "d":
-				case "D":
+					switch (answer2) {
 
-					if (correct1.equals(Quest1[urn.get(Count[3])])) {
+					case "a":
+					case "A":
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
-						// Item de segunda tentativa.
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
 
-						if (itemGained.equals("horacleHourglass")) {
+							// Item de segunda tentativa.
 
-							correct = false;
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
 
 						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct2.equals(Quest2[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct2.equals(Quest2[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health = 5;
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct2.equals(Quest2[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct2.equals(Quest2[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					}
+
+				} else if (a == 2) {
+
+					System.out.println("Aelin: Qual o resultado da divisão de:  2x³+4x²-6x+4 por x-3\n");
+
+					String Quest3[] = { "2x²+10x+24", "x²+10x+24", "5x²+10x-24", "-2x²+10x+24²", "Nenhuma das alternativas" };
+					int Count[] = { 0, 1, 2, 3, 4 };
+					String correct3 = "2x²+10x+24", answer3 = "";
+
+					if (itemGained.equals("clairvoyantEye")) {
+
+						// Estrutura de mistura de alternativas com item ativo.
+
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+
+						Collections.shuffle(urn);
+
+						System.out.println("a) " + Quest3[urn.get(Count[0])]);
+						System.out.println("b) " + Quest3[urn.get(Count[1])]);
+						System.out.println("c) " + Quest3[urn.get(Count[2])]);
 
 					} else {
 
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
+						// Estrutura de mistura de alternativas.
 
-						// Item de segunda tentativa.
+						urn.add(Count[0]);
+						urn.add(Count[1]);
+						urn.add(Count[2]);
+						urn.add(Count[3]);
+						urn.add(Count[4]);
 
-						if (itemGained.equals("horacleHourglass")) {
+						Collections.shuffle(urn);
 
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "e":
-				case "E":
-
-					if (correct1.equals(Quest1[urn.get(Count[4])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
+						System.out.println("a) " + Quest3[urn.get(Count[0])]);
+						System.out.println("b) " + Quest3[urn.get(Count[1])]);
+						System.out.println("c) " + Quest3[urn.get(Count[2])]);
+						System.out.println("d) " + Quest3[urn.get(Count[3])]);
+						System.out.println("e) " + Quest3[urn.get(Count[4])]);
 
 					}
 
-					break;
+					answer3 = input.next();
+
+					switch (answer3) {
+
+					case "a":
+					case "A":
+
+						if (correct3.equals(Quest3[urn.get(Count[0])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "b":
+					case "B":
+
+						if (correct3.equals(Quest3[urn.get(Count[1])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "c":
+					case "C":
+
+						if (correct3.equals(Quest3[urn.get(Count[2])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "d":
+					case "D":
+
+						if (correct3.equals(Quest3[urn.get(Count[3])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					case "e":
+					case "E":
+
+						if (correct3.equals(Quest3[urn.get(Count[4])])) {
+
+							System.out.println(
+									"Narrador: Aelin completa o encantamento e tudo oque se vê são chamas e uma enorme bola "
+											+ "de fogo vai em direção ao Ghoul que é completamente derretido por tamanho calor.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								correct = false;
+
+							}
+
+						} else {
+
+							System.out.println(
+									"Narrador: Aelin pensa ter completado o encatamento, mas algo deu errado e ele até "
+											+ "consegue lançar fogo no inimigo e elimina-lo, mas perde o controle das chamas e toma "
+											+ 5 + " de dano do seu próprio feitiço.\n");
+
+							// Item de segunda tentativa.
+
+							if (itemGained.equals("horacleHourglass")) {
+
+								clock = 0;
+								clock++;
+
+							}
+
+							health += +5;
+
+						}
+
+						break;
+
+					}
 
 				}
 
-			} else if (a == 1) {
+			} while (correct == true && !(clock == 2));
 
-				System.out.println("Aelin: Escolha o sucessor do numero binarioa 110110(54):\n");
-
-				String Quest2[] = { "110111", "111110", "110100", "111111", "nenhuma das alternativas" };
-				int Count[] = { 0, 1, 2, 3, 4 };
-				String correct2 = "110111", answer2 = "";
-
-				if (itemGained.equals("clairvoyantEye")) {
-
-					// Estrutura de mistura de alternativas com o item ativo.
-
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
-
-					Collections.shuffle(urn);
-
-					System.out.println("a) " + Quest2[urn.get(Count[0])]);
-					System.out.println("b) " + Quest2[urn.get(Count[1])]);
-					System.out.println("c) " + Quest2[urn.get(Count[2])]);
-
-				} else {
-
-					// Estrutura de mistura de alternativas.
-
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
-					urn.add(Count[3]);
-					urn.add(Count[4]);
-
-					Collections.shuffle(urn);
-
-					System.out.println("a) " + Quest2[urn.get(Count[0])]);
-					System.out.println("b) " + Quest2[urn.get(Count[1])]);
-					System.out.println("c) " + Quest2[urn.get(Count[2])]);
-					System.out.println("d) " + Quest2[urn.get(Count[3])]);
-					System.out.println("e) " + Quest2[urn.get(Count[4])]);
-
-				}
-
-				answer2 = input.next();
-
-				switch (answer2) {
-
-				case "a":
-				case "A":
-
-					if (correct2.equals(Quest2[urn.get(Count[0])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "b":
-				case "B":
-
-					if (correct2.equals(Quest2[urn.get(Count[1])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "c":
-				case "C":
-
-					if (correct2.equals(Quest2[urn.get(Count[2])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "d":
-				case "D":
-
-					if (correct2.equals(Quest2[urn.get(Count[3])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "e":
-				case "E":
-
-					if (correct2.equals(Quest2[urn.get(Count[4])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				}
-
-			} else if (a == 2) {
-
-				System.out
-						.println("- Aelin: Vamos testar se voc� domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x� . x�:\n");
-
-				String Quest3[] = { "x^5", "x^4", "5x", "x�+x�", "Nenhuma das alternativas" };
-				int Count[] = { 0, 1, 2, 3, 4 };
-				String correct3 = "x^5", answer3 = "";
-
-				if (itemGained.equals("clairvoyantEye")) {
-
-					// Estrutura de mistura de alternativas com item ativo.
-
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
-
-					Collections.shuffle(urn);
-
-					System.out.println("a) " + Quest3[urn.get(Count[0])]);
-					System.out.println("b) " + Quest3[urn.get(Count[1])]);
-					System.out.println("c) " + Quest3[urn.get(Count[2])]);
-
-				} else {
-
-					// Estrutura de mistura de alternativas.
-
-					urn.add(Count[0]);
-					urn.add(Count[1]);
-					urn.add(Count[2]);
-					urn.add(Count[3]);
-					urn.add(Count[4]);
-
-					Collections.shuffle(urn);
-
-					System.out.println("a) " + Quest3[urn.get(Count[0])]);
-					System.out.println("b) " + Quest3[urn.get(Count[1])]);
-					System.out.println("c) " + Quest3[urn.get(Count[2])]);
-					System.out.println("d) " + Quest3[urn.get(Count[3])]);
-					System.out.println("e) " + Quest3[urn.get(Count[4])]);
-
-				}
-
-				answer3 = input.next();
-
-				switch (answer3) {
-
-				case "a":
-				case "A":
-
-					if (correct3.equals(Quest3[urn.get(Count[0])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "b":
-				case "B":
-
-					if (correct3.equals(Quest3[urn.get(Count[1])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "c":
-				case "C":
-
-					if (correct3.equals(Quest3[urn.get(Count[2])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "d":
-				case "D":
-
-					if (correct3.equals(Quest3[urn.get(Count[3])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				case "e":
-				case "E":
-
-					if (correct3.equals(Quest3[urn.get(Count[4])])) {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-										+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							correct = false;
-
-						}
-
-					} else {
-
-						System.out.println(
-								"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-										+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explos�o e causando �X� dano em si mesmo. \n");
-
-						// Item de segunda tentativa.
-
-						if (itemGained.equals("horacleHourglass")) {
-
-							clock = 0;
-							clock++;
-
-						}
-
-						health = 5;
-
-					}
-
-					break;
-
-				}
-
-			}
-
-		} while (correct == true && !(clock == 2));
+		}
 
 		return health;
 
@@ -7492,6 +8218,18 @@ public class projetoPI {
 						+ "cercada por homens suspeitos, aparetemente mantida a for�a com eles. Voc� deve partir logo, n�o "
 						+ "sabemos qual ser� a inten��o dos sequestradores com essa ousada atitude.");
 
+						
+					System.out.println("Aelin: Tio..... Não sei como te agradeçer, não imaginei que estaria aqui neste momento...."
+					+"Eu estava me preparando para o teste... só queria poder cuidar do Reino e deixar minha família orgulhosa de mim.... "
+					+"Devo ir Tio, mas espero tudo de melhor a você, espero poder retribuir sua gentileza... Adeus....");
+
+					System.out.println("Maedhros: Aelin... Apenas mee prometa que vai salvar a princesa e limpar o nome de nossa família.... Adeus....");
+
+					System.out.println("Narrador: Aelin segue em direção a Kiev, a noite cai na floresta e Aelin para com a intenção de descansar"
+					+"mas é surpreendido por um Ghoul que estava perambulando na região.");
+
+
+					addHealth = question4(health,maxDodge,itemGained);
 				break; // Menu
 
 			case 3:
