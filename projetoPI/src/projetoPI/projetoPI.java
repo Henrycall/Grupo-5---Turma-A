@@ -722,7 +722,7 @@ public class projetoPI {
 		return health;
 
 	}
-
+	// completa
 	public static int question2(int health) {
 
 		ArrayList<Integer> urn = new ArrayList<Integer>();
@@ -887,9 +887,9 @@ public class projetoPI {
 
 			System.out.println("Aelin: Quais expressões a baixo são equivalentes a 5^2/5^8:\n");
 
-			String Quest2[] = { "(5²)-³" , "1^-6", "(5²)^-8" , "(-5)^-9",};
+			String Quest2[] = { "(5^2)^-3" , "1^-6", "(5^2)^-8" , "(-5)^-9",};
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct2 = "(5²)-³", answer5 = "";
+			String correct2 = "(5^2)^-3", answer5 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -6345,6 +6345,8 @@ public class projetoPI {
 
 	public static int question10(int health, String itemGained) {
 
+
+
 		ArrayList<Integer> urn = new ArrayList<Integer>();
 		Scanner input = new Scanner(System.in);
 		Random generation = new Random();
@@ -7127,6 +7129,7 @@ public class projetoPI {
 
 	public static int verifyItemNum(String itemGained) {
 
+
 		int num = 0;
 
 		switch (itemGained) {
@@ -7194,7 +7197,6 @@ public class projetoPI {
 
 		return num;
 	}
-
 	public static void main(String[] args) {
 
 		Scanner input = new Scanner(System.in);
