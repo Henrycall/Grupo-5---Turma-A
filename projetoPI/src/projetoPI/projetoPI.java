@@ -1196,11 +1196,11 @@ public class projetoPI {
 		if (a == 0) {
 
 			System.out.println(
-					"Aelin: Dado um n�mero hexadecimal (1E9), qual seria o valor do mesmo n�mero para base 2 ?");
+					"Aelin:Escolha a equação que resultará em uma reta crescente");
 
-			String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
+			String Quest1[] = { "x2-9", "-6x+6", "-1x+8", "-10x+6", "Nenhuma das anteriores" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct1 = "1 1110 1001", answer7 = "";
+			String correct1 = "x2-9", answer7 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -1228,17 +1228,18 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+							"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+									+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+									+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+							"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+									+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+									+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+									+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+									+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1252,17 +1253,18 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1276,17 +1278,18 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1300,17 +1303,18 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1324,17 +1328,18 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1346,11 +1351,13 @@ public class projetoPI {
 
 		} else if (a == 1) {
 
-			System.out.println("Aelin: Escolha o sucessor do numero binarioa 110110(54):\n");
+			System.out.println("Os computadores utilizam o sistema binário ou de base 2 que é um sistema de numeração em que todas\n"
+			+"as quantidades se representam com base em dois números, ou seja, (0 e 1). Em um computador o número 2012, em base decimal, \n"
+			+"será representado, em base binária, por:\n");
 
-			String Quest2[] = { "110111", "111110", "110100", "111111", "nenhuma das alternativas" };
+			String Quest2[] = { "110111.", "11111011100", "111110111000", "111110111", "1111010101" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct2 = "110111", answer8 = "";
+			String correct2 = "11111011100", answer8 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -1378,17 +1385,18 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1402,17 +1410,18 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1426,17 +1435,18 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1450,17 +1460,18 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1474,17 +1485,18 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1496,12 +1508,13 @@ public class projetoPI {
 
 		} else if (a == 2) {
 
-			System.out.println("- Aelin: Vamos testar se voc� domina uma habilidade util nas porximas etapas qual o "
-					+ "resultado de x� . x�:\n");
+			System.out.println("- Aelin: abe-se que o preço a ser pago por uma corrida de táxi inclui uma parcela fixa,\n"
+			  +" que é denominada bandeirada, e uma parcela variável, que é função da distância percorrida. Se o preço da bandeirada é R$4,60\n"
+			 +"e o quilômetro rodado é R$0,96, qual a distância percorrida por um passageiro que pagou R$19,00?\n");
 
-			String Quest3[] = { "x^5", "x^4", "5x", "x�+x�", "Nenhuma das alternativas" };
+			String Quest3[] = { "15km", "16m", "17km", "18km", "19km" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct3 = "x^5", answer9 = "";
+			String correct3 = "15km", answer9 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -1529,17 +1542,18 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1553,17 +1567,18 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1577,17 +1592,18 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1601,17 +1617,18 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
@@ -1625,17 +1642,18 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visualizar uma aura da mana,envolvendo-o \n"
+								+"e é possível ver aos poucos ele ficando transparente,após a finalização Aelin ficou invísivel e consegue\n"
+								+ "e consegue escapar enquanto os inimigos não conseguem identificar a sua presença\n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto Aelin começa a reproduzir as palavras do feitiço,é possível visulizar uma aura\n"
+								+ "de mana envolvendo-o e é possível ver aos poucos ele ficando transparente, mas Aelin pula\n"
+								+ "uma palavra do feitiço e causa uma enorme explsão,jogando todos para longe e deixando todos inconciêntes.\n"
+								+ "Apesar do dano que recebeu,acordou em um local longe dosseus perseguidores e começou a seguir. \n"
+								+"para um Reino distante onde mora um tio seu para pedir ajuda");
 
 					health = 10;
 
