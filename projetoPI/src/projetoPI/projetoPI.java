@@ -735,11 +735,11 @@ public class projetoPI {
 		if (a == 0) {
 
 			System.out.println(
-					"Aelin: Dado um n�mero hexadecimal (1E9), qual seria o valor do mesmo n�mero para base 2 ?");
-
-			String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
+					"Aelin: Vamos ver se você domina algumas habilidades para os proximos passos qual o resultado da seguinte soma envolvendo numeros ? \n"
+					+"negativos : (-4) + 9 = \n");
+			String Quest1[] = { "-5", "5", "-13", "-6", "Nenhuma das anteriores" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct1 = "1 1110 1001", answer4;
+			String correct1 = "5", answer4;
 
 			// Estrutura de mistura de alternativas.
 
@@ -767,17 +767,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+							"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+							+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+							+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+							"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+									+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+									+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+									+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -791,9 +791,9 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
@@ -815,17 +815,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -839,17 +839,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -863,17 +863,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -885,11 +885,11 @@ public class projetoPI {
 
 		} else if (a == 1) {
 
-			System.out.println("Aelin: Escolha o sucessor do numero binario 110110(54):\n");
+			System.out.println("Aelin: Quais expressões a baixo são equivalentes a 5^2/5^8:\n");
 
-			String Quest2[] = { "110111", "111110", "110100", "111111", "nenhuma das alternativas" };
+			String Quest2[] = { "(5²)-³" , "1^-6", "(5²)^-8" , "(-5)^-9",};
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct2 = "110111", answer5 = "";
+			String correct2 = "(5²)-³", answer5 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -917,17 +917,16 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -941,17 +940,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -965,17 +964,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -989,17 +988,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1013,17 +1012,16 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1035,12 +1033,11 @@ public class projetoPI {
 
 		} else if (a == 2) {
 
-			System.out.println("- Aelin: Vamos testar se voc� domina uma habilidade util nas porximas etapas qual o "
-					+ "resultado de x� . x�:\n");
+			System.out.println("- Aelin: (6^-4.8^-7)^-9 qual expressão a baixo é equivalente? \n");
 
-			String Quest3[] = { "x^5", "x^4", "5x", "x�+x�", "Nenhuma das alternativas" };
+			String Quest3[] = { "6^36 . 8^63", "1/6^13.8^63" , "1/6^13.8^18" , "6^5.8^2" , "Nenhuma das alternativas" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct3 = "x^5", answer6 = "";
+			String correct3 = "6^36 . 8^63", answer6 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -1068,17 +1065,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1092,17 +1089,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1116,17 +1113,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1140,17 +1136,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1164,17 +1159,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a resolu��o a tona, o feiti�o termina com ele \n"
-									+ "lan�ando uma enorme bola de fogo em dire��o ao alvo que est� em sua frente. \n");
-
+						"Enquanto a equações magicas são profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mãos.Após o término da conjuração Aelin aponta\n"
+						+ "em direcão ao alvo que é congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equa��es m�gicas s�o proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas m�os e quando ele traz a \n"
-									+ "resolu��o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explos�o e causando �X� dano em si mesmo. \n");
+						"Narrador: Enquanto a equaçãoes mágicas são proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mãos \n"
+								+ "Épossivel ver que as ondas de frio intenso vão em direcão as mãos de aelin,Porém algo da errado e o frio se exande\n"
+								+ "causando uma explosão próxima demais causando 10 de dano. \n");
 
 					health = 5;
 
