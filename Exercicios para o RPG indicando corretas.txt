@@ -1,0 +1,154 @@
+Perguntas para o tutorial
+
+T1 - Qual dos exemplos a baixo é uma numeral binario
+
+  A) 10 (correta)
+
+  B) 55
+
+  C) A4
+
+  D) 9F
+
+  E) nenhuma das alternativas
+
+
+T2 - Escolha o sucessor do numero binarioa 110110(54)
+
+  A)111110
+
+  B)110111 (correto)
+
+  C)110100
+
+  D)111111
+
+  E) nenhuma das alternativas
+
+
+T3 - Vamos testar se você domina uma habilidade util nas porximas etapas qual o resultado de 
+x² . x³:
+
+ A) x^4
+
+ b)5x
+
+ c)x²+x²
+
+ d)x^5 (correta)
+
+ e)Nenhuma das alternativas
+
+
+
+
+
+
+tema Soma de numeros negativos
+
+1 - vamos ver se você domina algumas as habilidades para os proximos passos
+qual o resultado da seguinte soma envolvendo numeros negativos
+
+  (-4) + 9:
+
+   A) -5 
+
+   b) 5 (correta)
+
+   c) -13
+
+   d) -13
+
+   e) nenhuma das alternativas
+  
+
+
+Desafio das propriedades da potenciação (expoentes inteiros)
+
+2 - Quais das expressões a baixo são equivalentes a 5²/5^8
+
+  A)(5²)-³(correta)
+  
+  B) 1^-6
+
+  C)(5²)^-8
+
+  d) (-5)^-9
+
+  e) nenhuma das altermativas
+                                                   
+
+
+
+
+Potências de produtos e quocientes (expoentes inteiros)
+
+3 - (6^-4.8^-7)^-9 qual expressão a baixo é equivalente?
+
+  a)6^36 . 8^63 (correta)
+
+  b) 1/6^13.8^63
+
+  c)1/6^13.8^18
+
+  d)6^5.8^2
+
+  e) Nenhuma das alternativas
+
+Expoentes fracionários
+
+4 - Qual expressão exponencial é equivalente a rais 7º de B
+ 
+  a) b^7
+
+  b) 1/b^7
+
+  C) b^1/7(correta)
+
+  d) 7^b/1
+
+  e) nenhuma das alternativas
+
+Multiplique binômios por polinômios
+
+5 - Qual o resultado da seguinte multiplicação (1+x).(x² - 5x -6)
+
+
+   A)x²-5x-6+x³-5x²-6x
+
+   B)x³-4x²-11x-6 (correta)
+
+   C)x³+4x²-6
+
+   d)x²+4x-11
+
+   E) Nenhuma das alternativas
+
+Divisão de poliomios
+
+6 - Qual o resultado da divisão de:  2x³+4x²-6x+4 por x-3
+
+
+  A) x²+10x+24
+
+  B) 5x²+10x-24
+
+  c) -2x²+10x+24
+
+  D) 2x²+10x+24 (correta)
+
+  E)nenhuma das alternativas
+
+7 - Escolha a equalção que resultara em uma reta crescente
+
+  A) x2-9 (correto)
+
+  B) -6x+6
+
+  c) -1x +8
+
+  D) -10x+6
+
+  C) Nenhuma da alternativas
+
+*****Possibilidade de alterar algum exercicios devido o avanço da materia.*****
