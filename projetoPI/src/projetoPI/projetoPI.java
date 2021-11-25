@@ -1,4 +1,4 @@
-package projetoPI;
+﻿package projetoPI;
 
 import java.util.Scanner;
 import java.util.Random;
