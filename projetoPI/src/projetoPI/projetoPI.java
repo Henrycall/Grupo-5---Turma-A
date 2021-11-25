@@ -11,7 +11,7 @@ public class projetoPI {
 	// "cannyBoots", "imortalsRosary" "horacleHourglass", "staffOfDestruction",
 	// "clairvoyantEye", "familyRing" };
 
-	// Verificador do item que será recebido.
+	// Verificador do item que serï¿½ recebido.
 	public static String verifyItem(String itemGained) {
 
 		Random generation = new Random();
@@ -97,7 +97,7 @@ public class projetoPI {
 
 	}
 
-	// Itens de status simples (Não testado ainda).
+	// Itens de status simples (Nï¿½o testado ainda).
 	public static int verifyItemStatus(String itemGained) {
 
 		int health = 0;
@@ -236,7 +236,7 @@ public class projetoPI {
 
 	}
 
-	// Item que ressuscita o personagem (Não testado ainda).
+	// Item que ressuscita o personagem (Nï¿½o testado ainda).
 	public static int imortalsRosary(String itemGained, int maxHealth) {
 
 		int health = 0;
@@ -255,7 +255,7 @@ public class projetoPI {
 
 	}
 
-	// Possibilidade para randomificar as questões entre algumas.
+	// Possibilidade para randomificar as questï¿½es entre algumas.
 	public static int question1(int health) {
 
 		ArrayList<Integer> urn = new ArrayList<Integer>();
@@ -268,7 +268,7 @@ public class projetoPI {
 		if (a == 0) {
 
 			System.out.println(
-					"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+					"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 			String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 			int Count[] = { 0, 1, 2, 3, 4 };
@@ -300,17 +300,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -324,17 +324,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -348,17 +348,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -372,17 +372,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -396,17 +396,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -450,17 +450,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -474,17 +474,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -498,17 +498,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -522,17 +522,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -546,17 +546,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -568,10 +568,10 @@ public class projetoPI {
 
 		} else if (a == 2) {
 
-			System.out.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-					+ "resultado de x² . x³:\n");
+			System.out.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+					+ "resultado de xï¿½ . xï¿½:\n");
 
-			String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+			String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 			int Count[] = { 0, 1, 2, 3, 4 };
 			String correct3 = "x^5", answer3;
 
@@ -601,17 +601,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -625,17 +625,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -649,17 +649,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -673,17 +673,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -697,17 +697,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -735,11 +735,11 @@ public class projetoPI {
 		if (a == 0) {
 
 			System.out.println(
-					"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
-
-			String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
+					"Aelin: Vamos ver se vocÃª domina algumas habilidades para os proximos passos qual o resultado da seguinte soma envolvendo numeros ? \n"
+					+"negativos : (-4) + 9 = \n");
+			String Quest1[] = { "-5", "5", "-13", "-6", "Nenhuma das anteriores" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct1 = "1 1110 1001", answer4;
+			String correct1 = "5", answer4;
 
 			// Estrutura de mistura de alternativas.
 
@@ -767,17 +767,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+							+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+							+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+									+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+									+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+									+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -791,17 +791,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 5;
 
@@ -815,17 +815,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -839,17 +839,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -863,17 +863,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -885,11 +885,11 @@ public class projetoPI {
 
 		} else if (a == 1) {
 
-			System.out.println("Aelin: Escolha o sucessor do numero binario 110110(54):\n");
+			System.out.println("Aelin: Quais expressÃµes a baixo sÃ£o equivalentes a 5^2/5^8:\n");
 
-			String Quest2[] = { "110111", "111110", "110100", "111111", "nenhuma das alternativas" };
+			String Quest2[] = { "(5Â²)-Â³" , "1^-6", "(5Â²)^-8" , "(-5)^-9",};
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct2 = "110111", answer5 = "";
+			String correct2 = "(5Â²)-Â³", answer5 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -917,17 +917,16 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
-
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");;
 
 					health = 5;
 
@@ -941,17 +940,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -965,17 +964,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -989,17 +988,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1013,17 +1012,16 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
-
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1035,12 +1033,11 @@ public class projetoPI {
 
 		} else if (a == 2) {
 
-			System.out.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-					+ "resultado de x² . x³:\n");
+			System.out.println("- Aelin: (6^-4.8^-7)^-9 qual expressÃ£o a baixo Ã© equivalente? \n");
 
-			String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+			String Quest3[] = { "6^36 . 8^63", "1/6^13.8^63" , "1/6^13.8^18" , "6^5.8^2" , "Nenhuma das alternativas" };
 			int Count[] = { 0, 1, 2, 3, 4 };
-			String correct3 = "x^5", answer6 = "";
+			String correct3 = "6^36 . 8^63", answer6 = "";
 
 			// Estrutura de mistura de alternativas.
 
@@ -1068,17 +1065,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1092,17 +1089,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1116,17 +1113,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
-
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1140,17 +1136,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
-
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1164,17 +1159,16 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
-
+						"Enquanto a equaÃ§Ãµes magicas sÃ£o profeeridas, um vento gelado forte se forma ao redor de Aelin,uma aura gelada se forma ao seu redor,centralizando \n"
+						+" a baixar temperautra no centro de suas mÃ£os.ApÃ³s o tÃ©rmino da conjuraÃ§Ã£o Aelin aponta\n"
+						+ "em direcÃ£o ao alvo que Ã© congelado instantaneamente \n");
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+						"Narrador: Enquanto a equaÃ§Ã£oes mÃ¡gicas sÃ£o proferidas, um vento forte se forma ao redor de Aelin \n"
+								+ "Aelin, uma aura gelada se forma ao seu redor,centralizando a baixa temperatura no centro de suas mÃ£os \n"
+								+ "Ã‰possivel ver que as ondas de frio intenso vÃ£o em direcÃ£o as mÃ£os de aelin,PorÃ©m algo da errado e o frio se exande\n"
+								+ "causando uma explosÃ£o prÃ³xima demais causando 10 de dano. \n");
 
 					health = 5;
 
@@ -1202,7 +1196,7 @@ public class projetoPI {
 		if (a == 0) {
 
 			System.out.println(
-					"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+					"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 			String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 			int Count[] = { 0, 1, 2, 3, 4 };
@@ -1234,17 +1228,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1258,17 +1252,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1282,17 +1276,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1306,17 +1300,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1330,17 +1324,17 @@ public class projetoPI {
 				if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1384,17 +1378,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1408,17 +1402,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1432,17 +1426,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1456,17 +1450,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1480,17 +1474,17 @@ public class projetoPI {
 				if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1502,10 +1496,10 @@ public class projetoPI {
 
 		} else if (a == 2) {
 
-			System.out.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-					+ "resultado de x² . x³:\n");
+			System.out.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+					+ "resultado de xï¿½ . xï¿½:\n");
 
-			String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+			String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 			int Count[] = { 0, 1, 2, 3, 4 };
 			String correct3 = "x^5", answer9 = "";
 
@@ -1535,17 +1529,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1559,17 +1553,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1583,17 +1577,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1607,17 +1601,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1631,17 +1625,17 @@ public class projetoPI {
 				if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-									+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-									+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+									+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+									+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 				} else {
 
 					System.out.println(
-							"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-									+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-									+ "explosão e causando “X” dano em si mesmo. \n");
+							"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+									+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+									+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+									+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 					health = 10;
 
@@ -1672,7 +1666,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -1722,9 +1716,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1737,10 +1731,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -1763,9 +1757,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1778,10 +1772,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -1804,9 +1798,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1819,10 +1813,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -1845,9 +1839,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1860,10 +1854,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -1886,9 +1880,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1901,10 +1895,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -1975,9 +1969,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -1990,10 +1984,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2016,9 +2010,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2031,10 +2025,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2057,9 +2051,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2072,10 +2066,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2098,9 +2092,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2113,10 +2107,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2139,9 +2133,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2154,10 +2148,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2179,10 +2173,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -2230,9 +2224,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2245,10 +2239,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2271,9 +2265,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2286,10 +2280,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2312,9 +2306,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2327,10 +2321,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2353,9 +2347,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2368,10 +2362,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2394,9 +2388,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2409,10 +2403,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2454,7 +2448,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -2504,9 +2498,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2519,10 +2513,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2545,9 +2539,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2560,10 +2554,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2586,9 +2580,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2601,10 +2595,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2627,9 +2621,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2642,10 +2636,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2668,9 +2662,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2683,10 +2677,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2757,9 +2751,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2772,10 +2766,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2798,9 +2792,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2813,10 +2807,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2839,9 +2833,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2854,10 +2848,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2880,9 +2874,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2895,10 +2889,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2921,9 +2915,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -2936,10 +2930,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -2961,10 +2955,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -3012,9 +3006,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3027,10 +3021,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3053,9 +3047,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3068,10 +3062,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3094,9 +3088,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3109,10 +3103,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3135,9 +3129,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3150,10 +3144,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3176,9 +3170,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3191,10 +3185,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3236,7 +3230,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -3286,9 +3280,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3301,10 +3295,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3327,9 +3321,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3342,10 +3336,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3368,9 +3362,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3383,10 +3377,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3409,9 +3403,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3424,10 +3418,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3450,9 +3444,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3465,10 +3459,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3539,9 +3533,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3554,10 +3548,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3580,9 +3574,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3595,10 +3589,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3621,9 +3615,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3636,10 +3630,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3662,9 +3656,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3677,10 +3671,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3703,9 +3697,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3718,10 +3712,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3743,10 +3737,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -3794,9 +3788,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3809,10 +3803,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3835,9 +3829,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3850,10 +3844,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3876,9 +3870,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3891,10 +3885,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3917,9 +3911,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3932,10 +3926,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -3958,9 +3952,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -3973,10 +3967,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4018,7 +4012,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -4068,9 +4062,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4083,10 +4077,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4109,9 +4103,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4124,10 +4118,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4150,9 +4144,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4165,10 +4159,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4191,9 +4185,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4206,10 +4200,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4232,9 +4226,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4247,10 +4241,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4321,9 +4315,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4336,10 +4330,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4362,9 +4356,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4377,10 +4371,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4403,9 +4397,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4418,10 +4412,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4444,9 +4438,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4459,10 +4453,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4485,9 +4479,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4500,10 +4494,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4525,10 +4519,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -4576,9 +4570,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4591,10 +4585,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4617,9 +4611,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4632,10 +4626,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4658,9 +4652,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4673,10 +4667,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4699,9 +4693,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4714,10 +4708,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4740,9 +4734,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4755,10 +4749,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4800,7 +4794,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -4850,9 +4844,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4865,10 +4859,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4891,9 +4885,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4906,10 +4900,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4932,9 +4926,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4947,10 +4941,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -4973,9 +4967,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -4988,10 +4982,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5014,9 +5008,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5029,10 +5023,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5103,9 +5097,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5118,10 +5112,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5144,9 +5138,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5159,10 +5153,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5185,9 +5179,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5200,10 +5194,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5226,9 +5220,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5241,10 +5235,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5267,9 +5261,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5282,10 +5276,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5307,10 +5301,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -5358,9 +5352,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5373,10 +5367,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5399,9 +5393,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5414,10 +5408,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5440,9 +5434,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5455,10 +5449,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5481,9 +5475,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5496,10 +5490,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5522,9 +5516,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5537,10 +5531,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5582,7 +5576,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -5632,9 +5626,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5647,10 +5641,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5673,9 +5667,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5688,10 +5682,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5714,9 +5708,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5729,10 +5723,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5755,9 +5749,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5770,10 +5764,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5796,9 +5790,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5811,10 +5805,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5885,9 +5879,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5900,10 +5894,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5926,9 +5920,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5941,10 +5935,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -5967,9 +5961,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -5982,10 +5976,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6008,9 +6002,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6023,10 +6017,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6049,9 +6043,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6064,10 +6058,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6089,10 +6083,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -6140,9 +6134,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6155,10 +6149,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6181,9 +6175,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6196,10 +6190,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6222,9 +6216,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6237,10 +6231,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6263,9 +6257,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6278,10 +6272,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6304,9 +6298,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6319,10 +6313,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6364,7 +6358,7 @@ public class projetoPI {
 			if (a == 0) {
 
 				System.out.println(
-						"Aelin: Dado um número hexadecimal (1E9), qual seria o valor do mesmo número para base 2 ?");
+						"Aelin: Dado um nï¿½mero hexadecimal (1E9), qual seria o valor do mesmo nï¿½mero para base 2 ?");
 
 				String Quest1[] = { "1 1110 1001", "0 0100 0011", "1 0010 1101", "0 1010 0001", "0 0100 1111" };
 				int Count[] = { 0, 1, 2, 3, 4 };
@@ -6414,9 +6408,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6429,10 +6423,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6455,9 +6449,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6470,10 +6464,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6496,9 +6490,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6511,10 +6505,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6537,9 +6531,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6552,10 +6546,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6578,9 +6572,9 @@ public class projetoPI {
 					if (correct1.equals(Quest1[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6593,10 +6587,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6667,9 +6661,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6682,10 +6676,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6708,9 +6702,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6723,10 +6717,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6749,9 +6743,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6764,10 +6758,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6790,9 +6784,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6805,10 +6799,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6831,9 +6825,9 @@ public class projetoPI {
 					if (correct2.equals(Quest2[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6846,10 +6840,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6871,10 +6865,10 @@ public class projetoPI {
 			} else if (a == 2) {
 
 				System.out
-						.println("- Aelin: Vamos testar se você domina uma habilidade util nas porximas etapas qual o "
-								+ "resultado de x² . x³:\n");
+						.println("- Aelin: Vamos testar se vocï¿½ domina uma habilidade util nas porximas etapas qual o "
+								+ "resultado de xï¿½ . xï¿½:\n");
 
-				String Quest3[] = { "x^5", "x^4", "5x", "x²+x²", "Nenhuma das alternativas" };
+				String Quest3[] = { "x^5", "x^4", "5x", "xï¿½+xï¿½", "Nenhuma das alternativas" };
 				int Count[] = { 0, 1, 2, 3, 4 };
 				String correct3 = "x^5", answer3 = "";
 
@@ -6922,9 +6916,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[0])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6937,10 +6931,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -6963,9 +6957,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[1])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -6978,10 +6972,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -7004,9 +6998,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[2])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -7019,10 +7013,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -7045,9 +7039,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[3])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -7060,10 +7054,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -7086,9 +7080,9 @@ public class projetoPI {
 					if (correct3.equals(Quest3[urn.get(Count[4])])) {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
-										+ "em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a resolução a tona, o feitiço termina com ele \n"
-										+ "lançando uma enorme bola de fogo em direção ao alvo que está em sua frente. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de Aelin, se tornando \n"
+										+ "em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a resoluï¿½ï¿½o a tona, o feitiï¿½o termina com ele \n"
+										+ "lanï¿½ando uma enorme bola de fogo em direï¿½ï¿½o ao alvo que estï¿½ em sua frente. \n");
 
 						// Item de segunda tentativa.
 
@@ -7101,10 +7095,10 @@ public class projetoPI {
 					} else {
 
 						System.out.println(
-								"Narrador: Enquanto a equações mágicas são proferidas, um vento forte se forma ao redor de \n"
-										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mãos e quando ele traz a \n"
-										+ "resolução a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
-										+ "explosão e causando “X” dano em si mesmo. \n");
+								"Narrador: Enquanto a equaï¿½ï¿½es mï¿½gicas sï¿½o proferidas, um vento forte se forma ao redor de \n"
+										+ "Aelin, se tornando em chamas que rodeiam-o sendo canalizadas para suas mï¿½os e quando ele traz a \n"
+										+ "resoluï¿½ï¿½o a tona, algo de errado faz com que Aelin perca o controle das chamas, causando uma \n"
+										+ "explosï¿½o e causando ï¿½Xï¿½ dano em si mesmo. \n");
 
 						// Item de segunda tentativa.
 
@@ -7207,17 +7201,17 @@ public class projetoPI {
 
 		// itens:
 
-		String[] itemName = { "um pão élfico", "uma poção de vida", "uma tunica de mithril",
-				"um grimório do conhecimento", "a bota do sagaz", "o rosário do imortal", "a apulheta do horáculo",
-				"o cajado da destruição", "o olho da clarividência", "o anel de família" };
+		String[] itemName = { "um pï¿½o ï¿½lfico", "uma poï¿½ï¿½o de vida", "uma tunica de mithril",
+				"um grimï¿½rio do conhecimento", "a bota do sagaz", "o rosï¿½rio do imortal", "a apulheta do horï¿½culo",
+				"o cajado da destruiï¿½ï¿½o", "o olho da clarividï¿½ncia", "o anel de famï¿½lia" };
 
 		String[] itemStatus = { "Recupera 5 pontos de vida", "Recupera 20 pontos de vida",
 				"Diminui em 10 o dano de inimigos", "iminui em 5 o dano de habilidades mal sucedidas",
 				"Aumenta a chance de se esquivar de um ataque",
 				"Permite que o jogador se levante com 30 de hp caso receba uma ferida mortal",
-				"Permite que o jogador tenha uma 2ª tentativa de responder uma questão que errou",
-				"Aumenta o dano em 50 de suas mágias de ataque", "Retira duas alternativas da multipla escolha",
-				"Uma herança de nossa família, apesar de não dar fazer nada, deixa viva a memória dentro dos nossos corações" };
+				"Permite que o jogador tenha uma 2ï¿½ tentativa de responder uma questï¿½o que errou",
+				"Aumenta o dano em 50 de suas mï¿½gias de ataque", "Retira duas alternativas da multipla escolha",
+				"Uma heranï¿½a de nossa famï¿½lia, apesar de nï¿½o dar fazer nada, deixa viva a memï¿½ria dentro dos nossos coraï¿½ï¿½es" };
 
 		int c = 0, num;
 
@@ -7231,16 +7225,16 @@ public class projetoPI {
 
 		int maxHealth = 100, maxDefense = 5, maxAttack = 20, maxDodge = 15;
 
-		// possível alteração nos status:
+		// possï¿½vel alteraï¿½ï¿½o nos status:
 
 		int health = 0, defense = 0, attack = 0, dodge = 0, addHealth = 0;
 
 		do {
 
-			System.out.println("Selecione a opção desejada:\n");
-			System.out.println("[1] Instruções");
+			System.out.println("Selecione a opï¿½ï¿½o desejada:\n");
+			System.out.println("[1] Instruï¿½ï¿½es");
 			System.out.println("[2] Jogar");
-			System.out.println("[3] Créditos");
+			System.out.println("[3] Crï¿½ditos");
 			System.out.println("[4] Sair\n");
 
 			option = input.nextInt();
@@ -7250,57 +7244,57 @@ public class projetoPI {
 
 			case 1:
 
-				System.out.println("O jogo é baseado em RPG de mesa, o mestre da mesa que chamamos de narrador \n"
-						+ "irá guiar a gameplay e de certa maneira controlar o mundo ao redor de Aelin, você deve \n"
-						+ "acertar as perguntas para ser bem sucedido nas magias que irá lançar ou pode tomar dano\n"
-						+ " de inimigos e dos seus próprios feitiçõs!\n");
+				System.out.println("O jogo ï¿½ baseado em RPG de mesa, o mestre da mesa que chamamos de narrador \n"
+						+ "irï¿½ guiar a gameplay e de certa maneira controlar o mundo ao redor de Aelin, vocï¿½ deve \n"
+						+ "acertar as perguntas para ser bem sucedido nas magias que irï¿½ lanï¿½ar ou pode tomar dano\n"
+						+ " de inimigos e dos seus prï¿½prios feitiï¿½ï¿½s!\n");
 
 				break;
 
 			case 2:
 
 				System.out.println(
-						"Em um tempo antigo, cheio de violência e misticismo, os grandes magos de Winterhold \n"
-								+ "após dezenas de milhares de anos descobriram uma forma não convencional de magia que \n"
-								+ "ultrapassava o poder destrutivo conhecido até o momento. Descobriram que os cálculos \n"
-								+ "matemáticos escondiam os feitiços mais poderosos. Nossa história se passa 15 anos após \n"
-								+ "essa descoberta histórica quando nosso personagem \"Aelin\" filho \"Galandriel\" \n"
-								+ "(Um dos magos que participou da descoberta do novo tipo de magia e um dos responsáveis pela \n"
-								+ "pesquisa realizadas com a mesma), ingressa no colégio para estudar com o objetivo de se \n"
-								+ "tornar o \"Guardião\" do Reino.\n");
+						"Em um tempo antigo, cheio de violï¿½ncia e misticismo, os grandes magos de Winterhold \n"
+								+ "apï¿½s dezenas de milhares de anos descobriram uma forma nï¿½o convencional de magia que \n"
+								+ "ultrapassava o poder destrutivo conhecido atï¿½ o momento. Descobriram que os cï¿½lculos \n"
+								+ "matemï¿½ticos escondiam os feitiï¿½os mais poderosos. Nossa histï¿½ria se passa 15 anos apï¿½s \n"
+								+ "essa descoberta histï¿½rica quando nosso personagem \"Aelin\" filho \"Galandriel\" \n"
+								+ "(Um dos magos que participou da descoberta do novo tipo de magia e um dos responsï¿½veis pela \n"
+								+ "pesquisa realizadas com a mesma), ingressa no colï¿½gio para estudar com o objetivo de se \n"
+								+ "tornar o \"Guardiï¿½o\" do Reino.\n");
 
 				System.out.println(
-						"Narrador: O dia está amanhecendo, uma pequena névoa surge por entre as árvores cobrindo a área \n"
-								+ "de floresta em volta da casa de Galandriel, em seu quarto, Aelin ronca como nunca por conta do cansaço \n"
+						"Narrador: O dia estï¿½ amanhecendo, uma pequena nï¿½voa surge por entre as ï¿½rvores cobrindo a ï¿½rea \n"
+								+ "de floresta em volta da casa de Galandriel, em seu quarto, Aelin ronca como nunca por conta do cansaï¿½o \n"
 								+ "causado pelos extensos treinos que vem tendo para garantir que consiga uma vaga entre os grandes magos \n"
-								+ "de Winterhold e possívelmente, ser guardião do reino. O Silencio que era rompido apenas pelos altos \n"
-								+ "roncos do nosso herói, foi quebrado quando Galandriel chegava na entrada do quarto e em alta voz bradou: \n");
+								+ "de Winterhold e possï¿½velmente, ser guardiï¿½o do reino. O Silencio que era rompido apenas pelos altos \n"
+								+ "roncos do nosso herï¿½i, foi quebrado quando Galandriel chegava na entrada do quarto e em alta voz bradou: \n");
 
 				System.out.println(
 						"Narrador: Ao abrir os olhos, Aelin se depara com Galandriel olhando ele da entrada de seu quarto, \n"
 								+ "um lugar com uma luminosidade relativa proveniente de velas, com pisos de madeira e paredes de pedra. \n "
-								+ "Ele também vê uma enorme coleção de livros, dos quais ele subtraiu muito tempo de sua vida folheando. \n"
-								+ "O local está um pouco bagunçado com pratos, canecas sujas e folhas de pergaminhos espalhadas sendo que \n"
-								+ "algumas estão amassadas, provavelmente por ele não ter tempo hábil para deixar os estudos e fazer algum \n"
-								+ "tipo de limpeza ou organização.\n");
+								+ "Ele tambï¿½m vï¿½ uma enorme coleï¿½ï¿½o de livros, dos quais ele subtraiu muito tempo de sua vida folheando. \n"
+								+ "O local estï¿½ um pouco bagunï¿½ado com pratos, canecas sujas e folhas de pergaminhos espalhadas sendo que \n"
+								+ "algumas estï¿½o amassadas, provavelmente por ele nï¿½o ter tempo hï¿½bil para deixar os estudos e fazer algum \n"
+								+ "tipo de limpeza ou organizaï¿½ï¿½o.\n");
 
 				System.out.println(
-						"Aelin:  Ahhhhhh, não acredito que já amanheceu ! Parece que acabei de me deitar ! Vou levantar Pai, \n"
-								+ "agradeço pelo aviso !\n");
+						"Aelin:  Ahhhhhh, nï¿½o acredito que jï¿½ amanheceu ! Parece que acabei de me deitar ! Vou levantar Pai, \n"
+								+ "agradeï¿½o pelo aviso !\n");
 
 				System.out.println(
-						"Galandriel: É o máximo que posso fazer por você, sabe bem que eu não posso interferir em mais nada \n"
-								+ "em relação ao seu treino, ou você pode acabar sendo punido com o cancelamento dos seus testes... \n");
+						"Galandriel: ï¿½ o mï¿½ximo que posso fazer por vocï¿½, sabe bem que eu nï¿½o posso interferir em mais nada \n"
+								+ "em relaï¿½ï¿½o ao seu treino, ou vocï¿½ pode acabar sendo punido com o cancelamento dos seus testes... \n");
 
 				System.out.println(
 						"Narrador: Enquanto Galandriel se retira, Aelin se levanta e segue para fazer suas necessidades \n"
-								+ "matinais. Após termina-lás, pega o seu cajado (Item importante para conjurar magias, a madeira mágica canaliza \n"
-								+ "a mana utilizada intensificando seus efeitos) e segue para o local de treino para continuar sua preparação. \n"
-								+ "Chegando no lugar ele organiza as magias que ele selecionou e começa a proferir palavas em élfico antigo: \n"
-								+ "(Lembre-se que enquando o Aelin estiver conjurando, será necessário que as questões matemáticas sejam \n"
-								+ "respondidas corretamente ou ele não vai obter sucesso na conjuração e possívelmente sofrerá penalidade).\n");
+								+ "matinais. Apï¿½s termina-lï¿½s, pega o seu cajado (Item importante para conjurar magias, a madeira mï¿½gica canaliza \n"
+								+ "a mana utilizada intensificando seus efeitos) e segue para o local de treino para continuar sua preparaï¿½ï¿½o. \n"
+								+ "Chegando no lugar ele organiza as magias que ele selecionou e comeï¿½a a proferir palavas em ï¿½lfico antigo: \n"
+								+ "(Lembre-se que enquando o Aelin estiver conjurando, serï¿½ necessï¿½rio que as questï¿½es matemï¿½ticas sejam \n"
+								+ "respondidas corretamente ou ele nï¿½o vai obter sucesso na conjuraï¿½ï¿½o e possï¿½velmente sofrerï¿½ penalidade).\n");
 
-				// Função de impressão dos status do personagem.
+				// Funï¿½ï¿½o de impressï¿½o dos status do personagem.
 				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
 
 				addHealth = question1(health);
@@ -7309,11 +7303,11 @@ public class projetoPI {
 
 				System.out.println(maxHealth + "\n");
 
-				// Condição de morte do personagem.
+				// Condiï¿½ï¿½o de morte do personagem.
 				if (maxHealth == 0) {
 
 					System.out.println(
-							"Narrador: A visão de Aelin fica escurecida e não consegue mais se mexer, aos poucos a vida se esvai"
+							"Narrador: A visï¿½o de Aelin fica escurecida e nï¿½o consegue mais se mexer, aos poucos a vida se esvai"
 									+ "e nada mais importa....\n");
 					System.out.println("Game Over !\n");
 
@@ -7321,10 +7315,10 @@ public class projetoPI {
 
 				}
 
-				System.out.println("Narrador: Após o lancamento do feitiço, Aelin olha em sua lista o próximo e "
-						+ "inicia a conjuração: \n");
+				System.out.println("Narrador: Apï¿½s o lancamento do feitiï¿½o, Aelin olha em sua lista o prï¿½ximo e "
+						+ "inicia a conjuraï¿½ï¿½o: \n");
 
-				// Função de impressão dos status do personagem.
+				// Funï¿½ï¿½o de impressï¿½o dos status do personagem.
 				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
 
 				addHealth = question2(health);
@@ -7333,11 +7327,11 @@ public class projetoPI {
 
 				System.out.println(maxHealth + "\n");
 
-				// Condição de morte do personagem.
+				// Condiï¿½ï¿½o de morte do personagem.
 				if (maxHealth == 0) {
 
 					System.out.println(
-							"Narrador: A visão de Aelin fica escurecida e não consegue mais se mexer, aos poucos a vida se esvai"
+							"Narrador: A visï¿½o de Aelin fica escurecida e nï¿½o consegue mais se mexer, aos poucos a vida se esvai"
 									+ "e nada mais importa....\n");
 					System.out.println("Game Over !\n");
 
@@ -7345,34 +7339,34 @@ public class projetoPI {
 
 				}
 
-				System.out.println("\nNarrador: As horas foram passando e o momento da prova ia se aproximando, porém "
+				System.out.println("\nNarrador: As horas foram passando e o momento da prova ia se aproximando, porï¿½m "
 						+ "enquanto Aelin estava praticando, ele observou que um barulho como de muitos passos se "
-						+ "aproximavam dele, ele vai em direção ao som para checar oque estava acontecendo, e ao se "
-						+ "aproximar, viu cerca de 15 guardas reais que iam em sua direção. Quando chegaram perto o "
-						+ "suficiente, o homem que parecia ser o líder se dirige a ele dizendo:\n");
+						+ "aproximavam dele, ele vai em direï¿½ï¿½o ao som para checar oque estava acontecendo, e ao se "
+						+ "aproximar, viu cerca de 15 guardas reais que iam em sua direï¿½ï¿½o. Quando chegaram perto o "
+						+ "suficiente, o homem que parecia ser o lï¿½der se dirige a ele dizendo:\n");
 
-				System.out.println("Líder da Guarda Real: Aelin !!! Peço que você nos acompanhe imediatamente !!! "
-						+ "Nós não queremos machuca-lo, mas vamos utilizar os meios necessários para te apreender. "
+				System.out.println("Lï¿½der da Guarda Real: Aelin !!! Peï¿½o que vocï¿½ nos acompanhe imediatamente !!! "
+						+ "Nï¿½s nï¿½o queremos machuca-lo, mas vamos utilizar os meios necessï¿½rios para te apreender. "
 						+ "Venha sem resistir !");
 
 				System.out.println("Aelin: Dragomir ? Oque significa isso tudo ? Me apreender ? Resisitir ? "
-						+ "Você não está fazendo sentido !\r\n" + "Oque está acontecendo ?\n");
+						+ "Vocï¿½ nï¿½o estï¿½ fazendo sentido !\r\n" + "Oque estï¿½ acontecendo ?\n");
 
-				System.out.println("Líder da Guarda Real: Bem... Provavelmente você deve saber oque houve, mas a "
-						+ "princesa foi raptada e encontramos uma túnica e um dos cajados que pertecem a você ! "
+				System.out.println("Lï¿½der da Guarda Real: Bem... Provavelmente vocï¿½ deve saber oque houve, mas a "
+						+ "princesa foi raptada e encontramos uma tï¿½nica e um dos cajados que pertecem a vocï¿½ ! "
 						+ "Agora pare com esse teatro e nos acompanhe agora mesmo, de qualquer maneira vamos "
-						+ "conseguir tirar de você onde a princesa está, não importam os meios.\n");
+						+ "conseguir tirar de vocï¿½ onde a princesa estï¿½, nï¿½o importam os meios.\n");
 
 				System.out.println("Narrador: Aelin estava completamente confuso e sem saber como agir, ele "
 						+ "pensava em como os pertences dele tinham aparecido dentro do quarto da princesa e "
-						+ "ao mesmo tempo pensava que se fosse pego, seria torturado porque não tinha provas "
-						+ "de sua inoência (A guarda real, era uma conhecida e temida instituição que tinha a"
-						+ " reputação de torturar pessoas mesmo sem saber se tinham envolvimento ou não com as "
-						+ "situações), diante dessa decisão, Aelin se lembra de um feitiço de fuga que ele "
-						+ "conhece e decide se evadir para conseguir provar sua inocência, rapidamente ele "
-						+ "começa a dizer as palavras mágicas:\n");
+						+ "ao mesmo tempo pensava que se fosse pego, seria torturado porque nï¿½o tinha provas "
+						+ "de sua inoï¿½ncia (A guarda real, era uma conhecida e temida instituiï¿½ï¿½o que tinha a"
+						+ " reputaï¿½ï¿½o de torturar pessoas mesmo sem saber se tinham envolvimento ou nï¿½o com as "
+						+ "situaï¿½ï¿½es), diante dessa decisï¿½o, Aelin se lembra de um feitiï¿½o de fuga que ele "
+						+ "conhece e decide se evadir para conseguir provar sua inocï¿½ncia, rapidamente ele "
+						+ "comeï¿½a a dizer as palavras mï¿½gicas:\n");
 
-				// Função de impressão dos status do personagem.
+				// Funï¿½ï¿½o de impressï¿½o dos status do personagem.
 				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
 
 				addHealth = question3(health);
@@ -7381,11 +7375,11 @@ public class projetoPI {
 
 				System.out.println(maxHealth + "\n");
 
-				// Condição de morte do personagem.
+				// Condiï¿½ï¿½o de morte do personagem.
 				if (maxHealth == 0) {
 
 					System.out.println(
-							"Narrador: A visão de Aelin fica escurecida e não consegue mais se mexer, aos poucos a vida se esvai"
+							"Narrador: A visï¿½o de Aelin fica escurecida e nï¿½o consegue mais se mexer, aos poucos a vida se esvai"
 									+ "e nada mais importa....\n");
 					System.out.println("Game Over !\n");
 
@@ -7393,42 +7387,42 @@ public class projetoPI {
 
 				}
 
-				System.out.println("Narrador: Após alguns meses de fuga e esconderijos, Aelin finalmente chega na "
-						+ "cidade, ele procura entrar sem chamar atenção para si, aonde onde ele olha, consegue ver "
+				System.out.println("Narrador: Apï¿½s alguns meses de fuga e esconderijos, Aelin finalmente chega na "
+						+ "cidade, ele procura entrar sem chamar atenï¿½ï¿½o para si, aonde onde ele olha, consegue ver "
 						+ "cartazes que falam sobre a princesa desaparecida e sobre recompensas para quem ajudar no "
-						+ "resgate ou encontrando o “culpado”, de qualquer maneira ele vai se esgueirando para dentro "
-						+ "da cidade e chega em frente a uma pequena casa, claramente não é utilizada por nobres e "
-						+ "está relativamente abandonada, ele bate três vezes na porta e após alguns segundos ela "
-						+ "se abre, quem aparece é um elfo alto de cabelos loiros e com uma certa idade e após "
+						+ "resgate ou encontrando o ï¿½culpadoï¿½, de qualquer maneira ele vai se esgueirando para dentro "
+						+ "da cidade e chega em frente a uma pequena casa, claramente nï¿½o ï¿½ utilizada por nobres e "
+						+ "estï¿½ relativamente abandonada, ele bate trï¿½s vezes na porta e apï¿½s alguns segundos ela "
+						+ "se abre, quem aparece ï¿½ um elfo alto de cabelos loiros e com uma certa idade e apï¿½s "
 						+ "identificar Aelin ele diz:");
 
 				System.out.println("Maedhros: Entre, entre rapidamente...");
 
-				System.out.println("Narrador: Após eles entrarem e fecharem a porta Aelin diz:");
+				System.out.println("Narrador: Apï¿½s eles entrarem e fecharem a porta Aelin diz:");
 
-				System.out.println("Aelin: Tio.... Como é bom ver algum rosto familiar ! Estou a meses assim, me "
+				System.out.println("Aelin: Tio.... Como ï¿½ bom ver algum rosto familiar ! Estou a meses assim, me "
 						+ "escondendo e procurando pistas sobre o desaparecimento da princesa, por enquanto ouvi "
-						+ "rumores que ela foi levada para o norte do país, gostaria muito de encontra-lá logo e "
-						+ "limpar o meu nome.... Sei que você está aposentado, mas não poderia me ajudar ? ");
+						+ "rumores que ela foi levada para o norte do paï¿½s, gostaria muito de encontra-lï¿½ logo e "
+						+ "limpar o meu nome.... Sei que vocï¿½ estï¿½ aposentado, mas nï¿½o poderia me ajudar ? ");
 
-				System.out.println("Narrador: Aelin sabia que seu tio fazia parte de um grupo anti-governo na região e"
-						+ " que tinham uma certa influência e facilidade para encontrar informações");
+				System.out.println("Narrador: Aelin sabia que seu tio fazia parte de um grupo anti-governo na regiï¿½o e"
+						+ " que tinham uma certa influï¿½ncia e facilidade para encontrar informaï¿½ï¿½es");
 
 				System.out.println("Maedhros: Aelin... Que bom te ver ! Eu nunca acreditei que isso havia sido obra "
-						+ "sua ! Um jovem mago brilhante como você e com ambição de se tornar o “Guardião” nunca iria"
-						+ " jogar tudo pro ar para raptar princesa nenhuma... Fique aqui dentro, tem comida e água "
-						+ "para você, se abasteça, coma e descanse, vou ver oque consigo fazer para ajuda-lo, "
-						+ "gostaria de poder aproveitar a sua presença se não estivessemos com tão pouco tempo... "
-						+ "mas enfim.... fique aqui e tente não chamar atenção !");
+						+ "sua ! Um jovem mago brilhante como vocï¿½ e com ambiï¿½ï¿½o de se tornar o ï¿½Guardiï¿½oï¿½ nunca iria"
+						+ " jogar tudo pro ar para raptar princesa nenhuma... Fique aqui dentro, tem comida e ï¿½gua "
+						+ "para vocï¿½, se abasteï¿½a, coma e descanse, vou ver oque consigo fazer para ajuda-lo, "
+						+ "gostaria de poder aproveitar a sua presenï¿½a se nï¿½o estivessemos com tï¿½o pouco tempo... "
+						+ "mas enfim.... fique aqui e tente nï¿½o chamar atenï¿½ï¿½o !");
 
 				System.out.println("Narrador: Enquanto Aelin tirava seu tempo de descanso dessa longa viagem, "
-						+ "Maedhros foi até a cidade e conversou com quem podia para conseguir informações e também "
-						+ "foi até seu amigo mercador para comprar um item para ajudar Aelin em sua jornada ! ");
+						+ "Maedhros foi atï¿½ a cidade e conversou com quem podia para conseguir informaï¿½ï¿½es e tambï¿½m "
+						+ "foi atï¿½ seu amigo mercador para comprar um item para ajudar Aelin em sua jornada ! ");
 
-				// Função de Sorteio do item
+				// Funï¿½ï¿½o de Sorteio do item
 				itemGained = verifyItem(itemGained);
 
-				// Funções de verificação dos status dos itens simples
+				// Funï¿½ï¿½es de verificaï¿½ï¿½o dos status dos itens simples
 				health = health + verifyItemStatus(itemGained);
 				health = health + verifyItem2Status(itemGained);
 				defense = defense + verifyItem3Status(itemGained);
@@ -7436,7 +7430,7 @@ public class projetoPI {
 				dodge = dodge + verifyItem5Status(itemGained);
 				attack = attack + verifyItem6Status(itemGained);
 
-				// Cálculos dos status dos itens simples
+				// Cï¿½lculos dos status dos itens simples
 				maxHealth = maxHealth + health;
 				maxDefense = maxDefense + defense;
 				maxAttack = maxAttack + attack;
@@ -7446,11 +7440,11 @@ public class projetoPI {
 				health = imortalsRosary(itemGained, maxHealth);
 				maxHealth = maxHealth + health;
 
-				// Condição de morte do personagem.
+				// Condiï¿½ï¿½o de morte do personagem.
 				if (maxHealth == 0) {
 
 					System.out.println(
-							"Narrador: A visão de Aelin fica escurecida e ele não consegue mais se mexer, aos poucos a vida se"
+							"Narrador: A visï¿½o de Aelin fica escurecida e ele nï¿½o consegue mais se mexer, aos poucos a vida se"
 									+ " esvai e nada mais importa....\n");
 					System.out.println("Game Over !\n");
 
@@ -7458,24 +7452,24 @@ public class projetoPI {
 
 				}
 
-				// Função de impressão dos status do personagem.
+				// Funï¿½ï¿½o de impressï¿½o dos status do personagem.
 				verifyStatus(maxHealth, maxDefense, maxAttack, maxDodge);
 
 				System.out.println(
-						"Narrador: Aelin está deitado e escuta a porta se abrindo e seu Tio entrando, Maedhros "
+						"Narrador: Aelin estï¿½ deitado e escuta a porta se abrindo e seu Tio entrando, Maedhros "
 								+ "chama Aelin e diz:");
 
-				// Verificação do número do item, utilizado para ajustar o diálogo abaixo para o
+				// Verificaï¿½ï¿½o do nï¿½mero do item, utilizado para ajustar o diï¿½logo abaixo para o
 				// item sorteado.
 				num = verifyItemNum(itemGained);
 
-				System.out.println("Maedhros: Aelin, Aelin ! Consegui informações úteis para você e também te trouxe "
-						+ itemName[num] + " , espero que você faça um bom uso dele, este item " + itemStatus[num]
-						+ ". Sobre as informções, "
-						+ " descobri que os rumores realmente estavam corretos, você deve seguir para o norte até Kiev, "
-						+ "após o desaparecimento da princesa, habitantes locais avistaram uma pessoa vestida com trajes reais, "
-						+ "cercada por homens suspeitos, aparetemente mantida a força com eles. Você deve partir logo, não "
-						+ "sabemos qual será a intenção dos sequestradores com essa ousada atitude.");
+				System.out.println("Maedhros: Aelin, Aelin ! Consegui informaï¿½ï¿½es ï¿½teis para vocï¿½ e tambï¿½m te trouxe "
+						+ itemName[num] + " , espero que vocï¿½ faï¿½a um bom uso dele, este item " + itemStatus[num]
+						+ ". Sobre as informï¿½ï¿½es, "
+						+ " descobri que os rumores realmente estavam corretos, vocï¿½ deve seguir para o norte atï¿½ Kiev, "
+						+ "apï¿½s o desaparecimento da princesa, habitantes locais avistaram uma pessoa vestida com trajes reais, "
+						+ "cercada por homens suspeitos, aparetemente mantida a forï¿½a com eles. Vocï¿½ deve partir logo, nï¿½o "
+						+ "sabemos qual serï¿½ a intenï¿½ï¿½o dos sequestradores com essa ousada atitude.");
 
 				break; // Menu
 
@@ -7487,7 +7481,7 @@ public class projetoPI {
 				System.out.println("Henry Felipe Callera");
 				System.out.println("Luciano Freire Lopes");
 				System.out.println("Rubens Anjos dos Santos Silva");
-				System.out.println("Vinícius Monteiro Lopes\n");
+				System.out.println("Vinï¿½cius Monteiro Lopes\n");
 
 				break;
 
@@ -7500,7 +7494,7 @@ public class projetoPI {
 
 			default:
 
-				System.out.println("Valor inválido !");
+				System.out.println("Valor invï¿½lido !");
 
 				break;
 
@@ -7509,6 +7503,7 @@ public class projetoPI {
 		} while (repeatLoop == 0);
 
 		input.close();
+		// teste
 
 	}
 
